@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html style="background: #fef9f6;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SoberSpace</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+
+
+    <link href="~/Scripts/Footer.css" rel="stylesheet" />
+
+</head>
+
+<style>
+
+    .navbar-brand {
+        font-family: Major Mono Display;
+    }
+
+    .navbar-nav > li > a:active {
+        color: #e2a349 !important;
+    }
+
+    .navbar-nav > li > a {
+        color: black;
+    }
+
+    .navabar-nav > li > a:visited {
+        color: #000000 !important;
+    }
+
+    .navabar-nav > li > a:active {
+        color: #495057 !important;
+    }
+
+    a:active {
+        color: #495057;
+    }
+
+    a:visited {
+        color: #ffffff;
+    }
+     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/assets/fonts")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</style>
+
+<body style="color: rgb(0, 0, 0); background: #495057;">
+    <div class="wrap" ;>
+        <div class="container body-content">
+            <nav class="navbar navbar-light navbar-expand-md  d-flex float-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" style="font-size: 25px; color: #e2a349"><p>SOBER SPACE</p></a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="margin-right: 0px; margin-left: 550px; font-size: 18px;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navhome" asp-controller="Home" asp-action="Index" href="/Home/Index" style="font-weight: bold;">Home</a></li>
+                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navgethelp" asp-controller="Home" asp-action="GetHelp" href="/GetHelp/GetHelp" style="font-weight: bold; ">Get Help</a></li>
+                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navassess" asp-controller="Home" asp-action="Assessment" href="/Assessment/AssessmForm" style="font-weight: bold; ">Assessment</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="container body-content">
+            <hr />
+        </div>
+
+        <div class="container body-content">
+            @RenderBody()
+
+
+        </div>
+
+        <div class="container body-content">
+            <hr style="margin-top: 50px;" />
+        </div>
+    </div>
+
+
+    <footer class="footer-dark" style="color: rgb(0, 0, 0); background: #495057; margin-top: 20px;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="/Home/Index">Home</a></li>
+                        <li><a href="/GetHelp/GetHelp">Get Help</a></li>
+                        <li><a href="#">Assessment</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 offset-0 text-justify align-self-center mr-auto item text" style="margin-bottom: 22px; margin-right: -23px; padding-right: 144px;">
+                    <h3 style="margin-top: 24px; font-family: Major Mono Display; color: #e2a349;"><p>SOBER SPACE</p></h3>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <p class="copyright">Sober Space © 2021</p>
+        </div>
+    </footer>
+
+
+   
+</body>
+
+<script type="text/javascript">
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var wrap = document.getElementById("wrap");
+        var fps = new FullPageScroll(wrap);
+        var indicator = document.createElement("div");
+        indicator.id = "indicator";
+        var slideIndicators = [];
+        fps.slides.forEach(function (slide, index) {
+            var slideIndicator = document.createElement("div");
+            slideIndicator.onclick = function () {
+                fps.goToSlide(index);
+            };
+            if (index === fps.currentSlide) {
+                slideIndicator.className = "active";
+            }
+            indicator.appendChild(slideIndicator);
+            slideIndicators.push(slideIndicator);
+        });
+        document.body.appendChild(indicator);
+        fps.onslide = function () {
+            slideIndicators.forEach(function (slideIndicator, index) {
+                if (index === fps.currentSlide) {
+                    slideIndicator.className = "active";
+                } else {
+                    slideIndicator.className = "";
+                }
+            });
+        };
+    });
+
+</script>
+</html>

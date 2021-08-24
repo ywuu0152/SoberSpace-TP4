@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Cannabis";
+}
+
+
+
+<head>
+
+    <link rel="stylesheet" href="~/Content/assets/css/animte-hover.css" />
+    <link rel="stylesheet" href="~/Content/assets/css/accordion-slider.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css" />
+    <script src="/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/Content/assets/fonts/fontawesome-all.min.css">
+    <link href="~/Content/assets/css/Features-Boxed.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <div class="jumbotron" style="width: 1198px; height:540px; background: #FFEE99; background-image:url('../../IMG/Img.jpg') ; margin-left:-24px;">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 style="font-size: 48px; color: #FFD819; margin-left: 10px; text-align: center; ">What is Cannabis?</h1>
+        <p style="font-size: 15px; margin-top: 30px; font-weight: normal; color: #FFD819; margin-left: 10px; text-align: center; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo augue, lobortis id placerat id, viverra nec justo. Aenean nec tincidunt nisi, a consequat justo. Sed justo lorem, tincidunt a tempor et, egestas non turpis. Sed laoreet lectus a auctor imperdiet. Vestibulum mi mauris, congue vitae dui a, fermentum condimentum mi. Suspendisse bibendum, ex a tempus elementum, quam arcu commodo tortor, et euismod odio lacus id nibh.”</p>
+        <div class="text-center">
+            <a class="btn btn-primary" role="button" style=" width: 120px; margin-left: 10px; background:#FFE97F;border-color: rgba(255,255,255,0); font-size: 14px; color:black;" href="#pagesection">Symptoms</a>
+        </div>
+    </div>
+
+
+    <br />
+    <div class="container-fluid" style="margin-bottom: 30px;">
+        <h1 style="margin-top: 100px;width: 540px;">Symptoms</h1>
+    </div>
+    <br /><br />
+
+    <div class="card-group">
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <h1 class="title" style="margin-bottom: 10px;">
+                        Physical
+                    </h1>
+                    <img class="image" src="~/IMG/Stress-pana.png" alt="" />
+                   
+                </div>
+                <div class="back">
+                    <h3 class="synopsis">Symptoms include:</h3>
+                    <p>Reduced motivation and energy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+
+                    <h1 class="title">
+                        Psychological
+                    </h1>
+                    <img class="image" src="~/IMG/5488.jpg" alt="" />
+                </div>
+                <div class="back">
+                    <h3 class="synopsis">Symptoms Include: </h3>
+                    <p>Impaired concentration, memory and learning</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+
+                    <h1 class="title">
+                        Behavioural
+                    </h1>
+                    <img class="image" src="~/IMG/5560.jpg" alt="" />
+                </div>
+                <div class="back">
+                    <h3 class="synopsis">Symptoms Include:</h3>
+                    <p> Heavy use can provoke mental health disorders including psychosis Your mouth.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br />
+</body>
+
+<script type="text/javascript">
+    var $sliderWrap = $('.slider-wrap');
+    var $slider = $sliderWrap.find('.slider');
+    var $index = $slider.find('.index');
+    var $img = $slider.find('.img');
+    var sliderNum = $slider.length;
+    var indexWidth = $index.width() + 1;
+    var sliderWrapWidth = $sliderWrap.width();
+    var duration = 300;
+
+    $(window).on('resize', function () {
+        sliderWrapWidth = $sliderWrap.width();
+    });
+
+    for (let i = 0; i < sliderNum; i++) {
+        $slider.eq(i).css({
+            left: i * indexWidth,
+            width: sliderWrapWidth - (i * indexWidth)
+        });
+    }
+
+    $index.on('click', function () {
+        var num = $index.index(this);
+        var start = sliderWrapWidth - (indexWidth * (sliderNum - num - 1));
+
+        for (let i = num; i > 0; i--) {
+            $slider.eq(i).stop().animate({ left: indexWidth * i }, duration, 'swing');
+        }
+
+        for (let i = num; i < sliderNum; i++) {
+            $slider.eq(i + 1).stop().animate({ left: start + (indexWidth * (i - num)) }, duration, 'swing');
+        }
+    });</script>
+
+
+
