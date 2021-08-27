@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HttpAuthModule, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HttpAuthModule.2.2.2.0\lib\net45\HttpAuthModule.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -139,6 +142,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResourcesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -151,6 +155,7 @@
     <Content Include="Content\assets\css\accordion-slider.css" />
     <Content Include="Content\assets\css\animte-hover.css" />
     <Content Include="Content\assets\css\Article-List.css" />
+    <Content Include="Content\assets\css\FlipCard.css" />
     <Content Include="Content\assets\css\Features-Boxed.css" />
     <Content Include="Content\assets\css\Features-Clean.css" />
     <Content Include="Content\assets\css\Footer-Dark.css" />
@@ -184,13 +189,49 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="IMG\5488.jpg" />
-    <Content Include="IMG\5560.jpg" />
+    <Content Include="IMG\1.jpg" />
+    <Content Include="IMG\10.jpg" />
+    <Content Include="IMG\11.jpg" />
+    <Content Include="IMG\12.jpg" />
+    <Content Include="IMG\13.jpg" />
+    <Content Include="IMG\14.jpg" />
+    <Content Include="IMG\2.jpg" />
+    <Content Include="IMG\3.jpg" />
+    <Content Include="IMG\4.jpg" />
+    <Content Include="IMG\5.jpg" />
+    <Content Include="IMG\6.jpg" />
+    <Content Include="IMG\7.jpg" />
+    <Content Include="IMG\8.jpg" />
+    <Content Include="IMG\9.jpg" />
+    <Content Include="IMG\C2.jpeg" />
+    <Content Include="IMG\C3.jpeg" />
+    <Content Include="IMG\Cannabis_Main.jpg" />
+    <Content Include="IMG\E1.jpeg" />
+    <Content Include="IMG\E2.jpeg" />
+    <Content Include="IMG\E3.jpeg" />
+    <Content Include="IMG\Ecstasy_main.jpg" />
+    <Content Include="IMG\GetHelp1.png" />
+    <Content Include="IMG\H1.jpeg" />
+    <Content Include="IMG\H2.jpeg" />
+    <Content Include="IMG\H3 %282%29.jpeg" />
+    <Content Include="IMG\Heroin_main.jpg" />
+    <Content Include="IMG\logo_up.png" />
+    <Content Include="IMG\Body.png" />
+    <Content Include="IMG\Brain.png" />
+    <Content Include="IMG\Cannabis1.png" />
+    <Content Include="IMG\Cannabis_Article1.png" />
+    <Content Include="IMG\Heart.png" />
+    <Content Include="IMG\Immune %281%29.png" />
+    <Content Include="IMG\Lungs.png" />
+    <Content Include="IMG\Mouth.png" />
+    <Content Include="IMG\Stomach.png" />
     <Content Include="IMG\Stress-pana.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="IMG\Img.jpg" />
+    <Content Include="IMG\GetHelp.png" />
+    <Content Include="IMG\Cannabis.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -245,6 +286,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper.min.js.map" />
     <Content Include="Scripts\index.js.flow" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\config\webpack.config.js" />
     <Content Include="Scripts\dist\index.js" />
@@ -347,6 +389,7 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
+    <Content Include="IMG\Resources_main.jpeg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -370,9 +413,20 @@
     <Content Include="Scripts\umd\popper.js.flow" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Views\GetHelp\Cannabis.cshtml" />
     <Content Include="Views\GetHelp\Ecstasy.cshtml" />
     <Content Include="Views\GetHelp\Heroin.cshtml" />
+    <Content Include="Views\GetHelp\Cannabis.cshtml" />
+    <Content Include="Views\Resources\Index.cshtml" />
+    <Content Include="Views\Resources\Index10.cshtml" />
+    <Content Include="Views\Resources\Index11.cshtml" />
+    <Content Include="Views\Resources\Index2.cshtml" />
+    <Content Include="Views\Resources\Index3.cshtml" />
+    <Content Include="Views\Resources\Index4.cshtml" />
+    <Content Include="Views\Resources\Index5.cshtml" />
+    <Content Include="Views\Resources\Index6.cshtml" />
+    <Content Include="Views\Resources\Index7.cshtml" />
+    <Content Include="Views\Resources\Index8.cshtml" />
+    <Content Include="Views\Resources\Index9.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

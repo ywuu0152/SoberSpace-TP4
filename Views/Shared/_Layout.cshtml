@@ -61,9 +61,9 @@
                     <a class="navbar-brand" href="#" style="font-size: 25px; color: #e2a349"><p>SOBER SPACE</p></a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1" style="margin-right: 0px; margin-left: 550px; font-size: 18px;">
                         <ul class="navbar-nav">
-                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navhome" asp-controller="Home" asp-action="Index" href="/Home/Index" style="font-weight: bold;">Home</a></li>
-                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navgethelp" asp-controller="Home" asp-action="GetHelp" href="/GetHelp/GetHelp" style="font-weight: bold; ">Get Help</a></li>
-                            <li class="nav-item" style="font-weight: bold; "><a class="nav-link" id="navassess" asp-controller="Home" asp-action="Assessment" href="/Assessment/AssessmForm" style="font-weight: bold; ">Assessment</a></li>
+                            <li class="nav-item" style="font-weight: bold; color: ghostwhite; "><a class="nav-link" id="navhome" asp-controller="Home" asp-action="Index" href="/Home/Index" style="font-weight: bold;">Home</a></li>
+                            <li class="nav-item" style="font-weight: bold; color: ghostwhite; "><a class="nav-link" id="navgethelp" asp-controller="Home" asp-action="GetHelp" href="/GetHelp/GetHelp" style="font-weight: bold; ">Get Help</a></li>
+                            <li class="nav-item" style="font-weight: bold; color: ghostwhite;"><a class="nav-link" id="navassess" asp-controller="Home" asp-action="Resources" href="/Resources/Index" style="font-weight: bold; ">Resources</a></li>
                         </ul>
                     </div>
 
@@ -92,21 +92,25 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3 item">
+                <div class="col-sm-6 col-md-3 item" style="color:ghostwhite;">
                     <h3>Pages</h3>
                     <ul>
                         <li><a href="/Home/Index">Home</a></li>
                         <li><a href="/GetHelp/GetHelp">Get Help</a></li>
-                        <li><a href="#">Assessment</a></li>
+                        <li><a href="/Resource/Index">Resources</a></li>
+
                     </ul>
                 </div>
 
                 <div class="col-md-6 offset-0 text-justify align-self-center mr-auto item text" style="margin-bottom: 22px; margin-right: -23px; padding-right: 144px;">
                     <h3 style="margin-top: 24px; font-family: Major Mono Display; color: #e2a349;"><p>SOBER SPACE</p></h3>
-                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
+                    <p style="font-size: 14px; color:ghostwhite;">
+                        Sober Space offers interactive, complete information, and resources. Within we share the content from public service and offer different aspects of supporting suggestions, and locations of professional centres.
+                    </p>
+                        <div class="col"><img class="img-fluid" src="~/IMG/logo_up.png" style="width: 100px; height:100px; margin-right: 7px; padding-right: 15px; margin-left:500px; margin-top: -200px;"></div>
+</div>
             <p class="copyright">Sober Space © 2021</p>
+
         </div>
     </footer>
 

@@ -5,9 +5,9 @@ img {
 }
 
 .card-container {
-    perspective: 1000;
+    perspective: 980px;
     margin: 0 auto 50px;
-    width: 200px;
+    width: 210px;
 }
 
 .front, .back {
@@ -20,7 +20,7 @@ img {
     left: 0;
     padding: 30px;
     box-sizing: border-box;
-    transition-delay: 0.15s;
+    transition-delay: 0.10s;
     transition: 0;
 }
 
@@ -31,19 +31,19 @@ img {
 .back {
     transform: rotateY(180deg);
     opacity: 0;
-    padding-top: 60px;
+    padding-top: 58px;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
-    background: #333741;
+    background: #17517e;
     color: white;
 }
 
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 302px;
+    height: 352px;
     background: white;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0 20px 90px rgba(0, 0, 0, 0.45);
     overflow: hidden;
     transition: 0.5s;
@@ -62,18 +62,7 @@ img {
             opacity: 1;
         }
 
-.sub-title {
-    color: #DE6262;
-    -webkit-animation: slide-in 0.75s;
-    animation: slide-in 0.75s;
-    -webkit-animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
-    animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
-    -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
-    animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
-    font-size: 18px;
-    font-weight: 200;
-    margin: 0 0 5px 0;
-}
+
 
 .title {
     color: #333741;
@@ -89,7 +78,7 @@ img {
 }
 
 .synopsis {
-    color: #DE6262;
+    color:deepskyblue;
     font-size: 27px;
     font-weight: 600;
     margin: 0 0 15px;
@@ -97,9 +86,9 @@ img {
 
 p {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 19px;
-    line-height: 1.5;
-    margin: 0 0 35px;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 32px;
 }
 
 
@@ -108,9 +97,9 @@ p {
     position: absolute;
     bottom: 0;
     left: 0;
-    -webkit-animation: slide-in-right 1.25s;
-    animation: slide-in-right 1.25s;
-    -webkit-animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+    -webkit-animation: slide-in-right 1.0s;
+    animation: slide-in-right 1.0s;
+    -webkit-animation: slide-in-right 1.0s;
     animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
     -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
     animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);

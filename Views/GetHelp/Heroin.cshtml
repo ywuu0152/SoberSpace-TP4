@@ -1,11 +1,11 @@
 ﻿
 @{
     ViewBag.Title = "Heroin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <head>
 
-    <link rel="stylesheet" href="~/Content/assets/css/animte-hover.css" />
     <link rel="stylesheet" href="~/Content/assets/css/accordion-slider.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -13,118 +13,211 @@
     <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css" />
     <script src="/Content/assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/Content/assets/fonts/fontawesome-all.min.css">
-    <link href="~/Content/assets/css/Features-Boxed.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/styles.css" rel="stylesheet" />
+
+    <link href="~/Content/assets/css/FlipCard.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/Article-List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="~/Content/assets/css/styles.css">
+
 </head>
 
 <body>
 
-
-    <div class="jumbotron" style="width: 1198px; height:540px; background: #FFEE99; background-image:url('../../IMG/Img.jpg') ; margin-left:-24px;">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1 style="font-size: 48px; color: #FFD819; margin-left: 10px; text-align: center; ">What is Heroin?</h1>
-        <p style="font-size: 15px; margin-top: 30px; font-weight: normal; color: #FFD819; margin-left: 10px; text-align: center; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo augue, lobortis id placerat id, viverra nec justo. Aenean nec tincidunt nisi, a consequat justo. Sed justo lorem, tincidunt a tempor et, egestas non turpis. Sed laoreet lectus a auctor imperdiet. Vestibulum mi mauris, congue vitae dui a, fermentum condimentum mi. Suspendisse bibendum, ex a tempus elementum, quam arcu commodo tortor, et euismod odio lacus id nibh.”</p>
-        <div class="text-center">
-            <a class="btn btn-primary" role="button" style=" width: 120px; margin-left: 10px; background:#FFE97F;border-color: rgba(255,255,255,0); font-size: 14px; color:black;" href="#pagesection">Symptoms</a>
+    <style>
+        .img {
+            width: 1198px;
+            height: 540px;
+        }
+    </style>
+    <div class="img">
+       
+        <img src="~/IMG/Heroin_main.jpg" />
+        <div class="text-left">
+            <a class="btn btn-primary" role="button" style=" width: 120px;margin-top:-400px; margin-left: 10px; background:#FFE97F;border-color: rgba(255,255,255,0); font-size: 14px; color:black;" href="#symptomssection">Symptoms</a>
         </div>
-    </div>
-
-
-    <br />
-    <div class="container-fluid" style="margin-bottom: 30px;">
-        <h1 style="margin-top: 100px;width: 540px;">Symptoms</h1>
     </div>
     <br /><br />
 
-    <div class="card-group">
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <h1 class="title" style="margin-bottom: 10px;">
-                        Physical
-                    </h1>
-                    <img class="image" src="~/IMG/Stress-pana.png" alt="" />
 
+          <div class="intro">
+              <h2 class="text-center" style="color:ghostwhite;"><strong>Symptoms </strong></h2>
+              <br />
+              <p class="text-center" style="color:ghostwhite; font-size: 18px;">How heroin affects your body</p>
+          </div>
+    <br /><br />
+
+
+
+</body>
+
+
+
+
+<section id="symptomssection" data-aos="fade-down" data-aos-duration="200" class="article-list" style="background: #495057">
+
+
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Brain.png" />
                 </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms include:</h3>
-                    <p>Reduced motivation and energy.</p>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Brain</h3>
+                        <p class="fs-6 text-white">
+                            Impaired memory and learning
+                            Increased risk of overdose
+                            Dependance
+                            Withdrawal cravings including: depression, anxiety, insomnia, agitation
+                            Coma and / or death from overdose
+
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-
-                    <h1 class="title">
-                        Psychological
-                    </h1>
-                    <img class="image" src="~/IMG/5488.jpg" alt="" />
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Lungs.png" />
                 </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms Include: </h3>
-                    <p>Impaired concentration, memory and learning</p>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Lungs</h3>
+                        <p class="fs-6 text-white">Pneumonia (lung disease)</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
 
-                    <h1 class="title">
-                        Behavioural
-                    </h1>
-                    <img class="image" src="~/IMG/5560.jpg" alt="" />
+                    <img src="~/IMG/Heart.png" />
                 </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms Include:</h3>
-                    <p> Heavy use can provoke mental health disorders including psychosis Your mouth.</p>
-
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Heart</h3>
+                        <p class="fs-6 text-white">Heart damage</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <br /><br /><br />
-</body>
+</section>
 
-<script type="text/javascript">
-    var $sliderWrap = $('.slider-wrap');
-    var $slider = $sliderWrap.find('.slider');
-    var $index = $slider.find('.index');
-    var $img = $slider.find('.img');
-    var sliderNum = $slider.length;
-    var indexWidth = $index.width() + 1;
-    var sliderWrapWidth = $sliderWrap.width();
-    var duration = 300;
-
-    $(window).on('resize', function () {
-        sliderWrapWidth = $sliderWrap.width();
-    });
-
-    for (let i = 0; i < sliderNum; i++) {
-        $slider.eq(i).css({
-            left: i * indexWidth,
-            width: sliderWrapWidth - (i * indexWidth)
-        });
-    }
-
-    $index.on('click', function () {
-        var num = $index.index(this);
-        var start = sliderWrapWidth - (indexWidth * (sliderNum - num - 1));
-
-        for (let i = num; i > 0; i--) {
-            $slider.eq(i).stop().animate({ left: indexWidth * i }, duration, 'swing');
-        }
-
-        for (let i = num; i < sliderNum; i++) {
-            $slider.eq(i + 1).stop().animate({ left: start + (indexWidth * (i - num)) }, duration, 'swing');
-        }
-    });</script>
+<section>
 
 
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Immune (1).png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Immune System</h3>
+                        <p class="fs-6 text-white">
+                            Increased risk of infection,
+                            Risk of hepatitis, tetanus and HIV
+                        </p>
+                    </div>
+                    <
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Stomach.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Stomach</h3>
+                        <p class="fs-6 text-white">
+                            Nausea and vomiting,
+                            Chronic constipation,
+                            Loss of appetite leading to poor diet and health
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Body.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Injecting of heroin into body can lead to:</h3>
+                        <p class="fs-6 text-white">
+                            Collapsed veins
+                            Blocked blood vessels caused by the additives and impurities.<br/>
+                            Skin infections and abscesses caused by injecting on the same site.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+</section>
+<section data-aos="fade-down" data-aos-duration="200" class="article-list" style="margin-top: 50px;">
+    <div class="container" style="border-color: #495057; background: #495057; ">
+        <div class="intro">
+            <h2 class="text-center" style="color:ghostwhite;"><strong>These are few relevant articles that can help you out </strong></h2>
+        </div>
+        <div class="row articles">
+            <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                <a href="#"><img class="img-fluid" src="~/IMG/H1.jpeg"></a>
+                <h3 class="name" style="color: ghostwhite;"><strong>Alternative Treatments for Heroin Addiction</strong></h3>
+                <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                    The proposed trial of prescription heroin in the ACT did not proceed following its rejection by Federal Cabinet in August 1997. Much has occurred in the intervening period as the pressure has built on different players (particularly governments) to fill the void. For example, the Commonwealth Government has announced that the next stage of the National Drug Strategy, 1998-2002, will have as its main focus a National Illicit Drugs Strategy. In addition, most States and Territories have commenced trials of various treatments for heroin addiction such as naltrexone and New South Wales has announced that it is to introduce a United States' concept, the 'drug court'.
+                </p><a class="action" href="https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/Publications_Archive/CIB/cib9899/99CIB03" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+            </div>
 
 
+            <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                <a href="#"><img class="img-fluid" src="~/IMG/H2.jpeg"></a>
+                <h3 class="name" style="color: ghostwhite;"><strong>Heroin: client demographics and treatment</strong></h3>
+                <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                    In 2019–20, heroin was reported as a drug of concern in 7% of all closed treatment episodes, either as a principal or additional drug of concern:
+                    heroin was the 4th most common principal drug of concern (5% or 11,133 episodes)
+                    the most common additional drugs of concern reported with heroin include amphetamines (30%) or cannabis (18%) but these drugs are not the subject of any treatment within the episode.
+                    Heroin use and harms: Heroin is an opioid drug; opioids are strong pain-killers with addictive properties. Short-term side effects of use include pain relief and feelings of euphoria and wellbeing, while long‑term effects can include lowered sex drive and infertility (for women), along with risk of overdose, coma and death (ADCA 2013).
+
+                </p><a class="action" href="https://www.aihw.gov.au/reports/alcohol-other-drug-treatment-services/alcohol-other-drug-treatment-services-australia/contents/drugs-of-concern/heroin" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+            </div>
+            <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                <a href="#"><img class="img-fluid" src="~/IMG/H3 (2).jpeg"></a>
+                <h3 class="name" style="color: ghostwhite;"><strong>Estimating the number of heroin users in Australia</strong></h3>
+                <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                    Estimating the prevalence of drug use is one of the key focal areas of alcohol and drug epidemiology. Estimation of the extent of alcohol and drug use in the Australian community has primarily been undertaken using surveys of the general population. Nevertheless, it is widely understood that prevalence estimates derived from general population surveys underestimate the true extent of drug use in the community for drugs of low use prevalence (e.g. heroin) because of issues around sampling (e.g. response rates and the extent to which crucial samples such as the homeless are missed in household surveys) and the truthfulness of responses to questions concerning illegal or hidden behaviours.
+                </p><a class="action" href="https://ndarc.med.unsw.edu.au/resource/bulletin-no-05-estimating-number-heroin-users-australia" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/Content/assets/js/jquery.min.js"></script>
+<script src="~/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/Content/assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

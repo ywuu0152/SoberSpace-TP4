@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index5";
+}
+
+<h1 style="font-size: 48px; color: #FFD819; margin-left: 10px; text-align: center; ">What is your choice?</h1>
+<p style="color: #FFD819; margin-left: 10px; text-align: center; ">(Just click on the picture)</p>
+
+<table width="100%">
+    <tr>
+        <td align="left">
+            <a a href="Index6">
+                <img id="img" src="~/IMG/6.jpg" height="388" width="563">
+            </a>
+        </td>
+
+        <td align="right">
+            <a a href="Index7">
+                <img id="img" src="~/IMG/8.jpg" height="388" width="563">
+            </a>
+        </td>
+    </tr>
+</table>
+
+
+<style type="text/css">
+    #img {
+        box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        /*Consider browser compatibility*/
+        -moz-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        cursor: pointer;
+        transition: all 0.6s;
+        border-radius: 10px;
+    }
+
+        #img:hover {
+            transform: scale(1.02);
+        }
+</style>

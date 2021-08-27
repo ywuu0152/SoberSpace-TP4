@@ -1,11 +1,11 @@
 ﻿
 @{
     ViewBag.Title = "Ecstasy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <head>
 
-    <link rel="stylesheet" href="~/Content/assets/css/animte-hover.css" />
     <link rel="stylesheet" href="~/Content/assets/css/accordion-slider.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -13,118 +13,198 @@
     <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css" />
     <script src="/Content/assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/Content/assets/fonts/fontawesome-all.min.css">
-    <link href="~/Content/assets/css/Features-Boxed.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/styles.css" rel="stylesheet" />
+
+    <link href="~/Content/assets/css/FlipCard.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/Content/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/Article-List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="~/Content/assets/css/styles.css">
+
+
 </head>
 
 <body>
 
-
-    <div class="jumbotron" style="width: 1198px; height:540px; background: #FFEE99; background-image:url('../../IMG/Img.jpg') ; margin-left:-24px;">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1 style="font-size: 48px; color: #FFD819; margin-left: 10px; text-align: center; ">What is Ecstasy?</h1>
-        <p style="font-size: 15px; margin-top: 30px; font-weight: normal; color: #FFD819; margin-left: 10px; text-align: center; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo augue, lobortis id placerat id, viverra nec justo. Aenean nec tincidunt nisi, a consequat justo. Sed justo lorem, tincidunt a tempor et, egestas non turpis. Sed laoreet lectus a auctor imperdiet. Vestibulum mi mauris, congue vitae dui a, fermentum condimentum mi. Suspendisse bibendum, ex a tempus elementum, quam arcu commodo tortor, et euismod odio lacus id nibh.”</p>
-        <div class="text-center">
-            <a class="btn btn-primary" role="button" style=" width: 120px; margin-left: 10px; background:#FFE97F;border-color: rgba(255,255,255,0); font-size: 14px; color:black;" href="#pagesection">Symptoms</a>
+    <style>
+        .img {
+            width: 1198px;
+            height: 540px;
+        }
+    </style>
+    <div class="img">
+     
+        <img src="~/IMG/Ecstasy_main.jpg" />
+        <div class="text-left">
+            <a class="btn btn-primary" role="button" style=" width: 120px;margin-top:-400px; margin-left: 10px; background:#FFE97F;border-color: rgba(255,255,255,0); font-size: 14px; color:black;" href="#symptomssection">Symptoms</a>
         </div>
-    </div>
-
-
-    <br />
-    <div class="container-fluid" style="margin-bottom: 30px;">
-        <h1 style="margin-top: 100px;width: 540px;">Symptoms</h1>
     </div>
     <br /><br />
 
-    <div class="card-group">
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <h1 class="title" style="margin-bottom: 10px;">
-                        Physical
-                    </h1>
-                    <img class="image" src="~/IMG/Stress-pana.png" alt="" />
 
-                </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms include:</h3>
-                    <p>Reduced motivation and energy.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
+          <div class="intro">
+              <h2 class="text-center" style="color:ghostwhite;"><strong>Symptoms </strong></h2>
+              <br/>
+              <p class="text-center" style="color:ghostwhite; font-size: 18px;">How ectasy affects your body</p>
+          </div>
+    <br /><br />
 
-                    <h1 class="title">
-                        Psychological
-                    </h1>
-                    <img class="image" src="~/IMG/5488.jpg" alt="" />
-                </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms Include: </h3>
-                    <p>Impaired concentration, memory and learning</p>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
 
-                    <h1 class="title">
-                        Behavioural
-                    </h1>
-                    <img class="image" src="~/IMG/5560.jpg" alt="" />
-                </div>
-                <div class="back">
-                    <h3 class="synopsis">Symptoms Include:</h3>
-                    <p> Heavy use can provoke mental health disorders including psychosis Your mouth.</p>
 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br /><br /><br />
 </body>
 
-<script type="text/javascript">
-    var $sliderWrap = $('.slider-wrap');
-    var $slider = $sliderWrap.find('.slider');
-    var $index = $slider.find('.index');
-    var $img = $slider.find('.img');
-    var sliderNum = $slider.length;
-    var indexWidth = $index.width() + 1;
-    var sliderWrapWidth = $sliderWrap.width();
-    var duration = 300;
 
-    $(window).on('resize', function () {
-        sliderWrapWidth = $sliderWrap.width();
-    });
 
-    for (let i = 0; i < sliderNum; i++) {
-        $slider.eq(i).css({
-            left: i * indexWidth,
-            width: sliderWrapWidth - (i * indexWidth)
-        });
-    }
+    <section id="symptomssection" data-aos="fade-down" data-aos-duration="200" class="article-list" style="background: #495057">
 
-    $index.on('click', function () {
-        var num = $index.index(this);
-        var start = sliderWrapWidth - (indexWidth * (sliderNum - num - 1));
 
-        for (let i = num; i > 0; i--) {
-            $slider.eq(i).stop().animate({ left: indexWidth * i }, duration, 'swing');
-        }
+        <div class="container d-flex align-items-center justify-content-center flex-wrap">
+            <div class="box">
+                <div class="body">
+                    <div class="imgContainer">
+                        <img src="~/IMG/Brain.png" />
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Brain</h3>
+                            <p class="fs-6 text-white">
+                                Anxiety,
+                                Paranoia,
+                                Hallucinations and delirium,
+                                Large pupils,
+                                Loss of consciousness,
+                                Fitting/Seizures,
+                                Irritability, fatigue, difficulty concentrating, low mood (in the days after use)
 
-        for (let i = num; i < sliderNum; i++) {
-            $slider.eq(i + 1).stop().animate({ left: start + (indexWidth * (i - num)) }, duration, 'swing');
-        }
-    });</script>
 
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="body">
+                    <div class="imgContainer">
+
+                        <img src="~/IMG/Mouth.png" />
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Mouth</h3>
+                            <p class="fs-6 text-white">
+                                Teeth grinding,
+                                Jaw clenching
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="body">
+                    <div class="imgContainer">
+
+                        <img src="~/IMG/Heart.png" />
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Heart</h3>
+                            <p class="fs-6 text-white">
+                                rapid heart beat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br />
+    </section>
+
+    <section>
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/Body.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Body</h3>
+                        <p class="fs-6 text-white">
+                            Muscle aches and pains,
+                            Increased body temperature (hyperthermia),
+                            Heat stroke,
+                            Dehydration,
+                            Drinking excessive amounts of water (can lead to coma and death),
+                            Vomiting
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br /><br /><br />
+    </section>
+
+
+
+    <section data-aos="fade-down" data-aos-duration="200" class="article-list" style="margin-top: 50px;">
+        <div class="container" style="border-color: #495057; background: #495057; ">
+            <div class="intro">
+                <h2 class="text-center" style="color:ghostwhite;"><strong>These are few relevant articles that can help you out </strong></h2>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                    <a href="#"><img class="img-fluid" src="~/IMG/E1.jpeg "></a>
+                    <h3 class="name" style="color: ghostwhite;"><strong>What are “Party Drugs”/MDMA/Ecstasy?</strong></h3>
+                    <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                        In Australia, MDMA/Ecstasy are also known as E, pills, caps, pingers, M&M, doopa, love drug, disco biscuits, XTC, X and eccy.
+
+                        "Party Drugs" is a term used to describe a range of illegal drugs sold as tablets (“pills”) or capsules (“caps”). Ecstasy is the common name for a drug called MDMA, which is usually sold as a pill or capsule, although it can also come in powder or crystal form. When sold as a pill, a logo is typically stamped on the tablet, but this is no guarantee of quality or purity.
+                    </p><a class="action" href="https://positivechoices.org.au/teachers/ecstasy-and-mdma-factsheet" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                    <a href="#"><img class="img-fluid" src="~/IMG/E2.jpeg "></a>
+                    <h3 class="name" style="color: ghostwhite;"><strong>Ecstasy use in Australia, a world high</strong></h3>
+                    <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                        The world’s first comprehensive report on global addictions has revealed that Australia is one of the top users of ecstasy and cocaine.
+
+                        Australia is the leading user of ecstasy, with 3% of the population taking the drug at least once per year, compared with 1% of Brits and Americans. The world leader in cocaine use is Scotland, where 2.4% of the population uses it each year, but Australia is not far behind, with 2.1% of the population dabbling in cocaine at least once per year.
+                    </p><a class="action" href="https://www.mydr.com.au/addictions/ecstasy-use-in-australia-a-world-high/" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item" style="border: 2px none var(--secondary) ;">
+
+                    <a href="#"><img class="img-fluid" src="~/IMG/E3.jpeg "></a>
+                    <h3 class="name" style="color: ghostwhite;"><strong>Ecstasy on the barbie: Australia seizes more than half a tonne of drugs smuggled in barbecues</strong></h3>
+                    <p class="description" style="text-align: left;margin: 30px 12px 0px; color: ghostwhite;">
+                        In a statement on Tuesday, the Australian Border Force (ABF) said it had charged a 30-year-old man from Queensland and a 33-year-old Canadian national over their involvement in the criminal enterprise. At well over half a tonne, the haul of MDMA, commonly known as ecstasy, is the biggest shipment by weight seized in Australia this year.
+
+                        The investigation remains ongoing and is expected to lead to further arrests, the ABF said. Police didn’t disclose the names of the two men held, who each face a maximum penalty of life imprisonment if convicted.
+
+                    </p><a class="action" href="https://www.reuters.com/article/us-australia-drugs-idUSKBN1YL0B1" target="_blank" style="margin: 30px 163px 0px;"><i class="fa fa-arrow-circle-right" data-bss-hover-animate="swing"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+    <script src="~/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 
 
