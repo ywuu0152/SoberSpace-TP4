@@ -63,5 +63,20 @@ namespace SoberSpace.Controllers
             return View();
         }
 
+        public ActionResult Index12()
+        {
+            return View();
+        }
+
+        public ActionResult Index13()
+        {
+            return View();
+        }
+
+        public ActionResult Index14()
+        {
+            return View();
+        }
+
     }
 }

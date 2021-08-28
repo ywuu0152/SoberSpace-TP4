@@ -189,20 +189,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="IMG\1.jpg" />
-    <Content Include="IMG\10.jpg" />
-    <Content Include="IMG\11.jpg" />
-    <Content Include="IMG\12.jpg" />
-    <Content Include="IMG\13.jpg" />
-    <Content Include="IMG\14.jpg" />
-    <Content Include="IMG\2.jpg" />
-    <Content Include="IMG\3.jpg" />
-    <Content Include="IMG\4.jpg" />
-    <Content Include="IMG\5.jpg" />
-    <Content Include="IMG\6.jpg" />
-    <Content Include="IMG\7.jpg" />
-    <Content Include="IMG\8.jpg" />
-    <Content Include="IMG\9.jpg" />
+    <Content Include="IMG\S1.jpg" />
     <Content Include="IMG\C2.jpeg" />
     <Content Include="IMG\C3.jpeg" />
     <Content Include="IMG\Cannabis_Main.jpg" />
@@ -224,6 +211,22 @@
     <Content Include="IMG\Immune %281%29.png" />
     <Content Include="IMG\Lungs.png" />
     <Content Include="IMG\Mouth.png" />
+    <Content Include="IMG\S10.jpg" />
+    <Content Include="IMG\S11.jpg" />
+    <Content Include="IMG\S12.jpg" />
+    <Content Include="IMG\S13.jpg" />
+    <Content Include="IMG\S14.jpg" />
+    <Content Include="IMG\S15.jpg" />
+    <Content Include="IMG\S16.jpg" />
+    <Content Include="IMG\S17.jpg" />
+    <Content Include="IMG\S2.jpg" />
+    <Content Include="IMG\S3.jpg" />
+    <Content Include="IMG\S4.jpg" />
+    <Content Include="IMG\S5.jpg" />
+    <Content Include="IMG\S6.jpg" />
+    <Content Include="IMG\S7.jpg" />
+    <Content Include="IMG\S8.jpg" />
+    <Content Include="IMG\S9.jpg" />
     <Content Include="IMG\Stomach.png" />
     <Content Include="IMG\Stress-pana.png" />
     <Content Include="favicon.ico" />
@@ -428,6 +431,9 @@
     <Content Include="Views\Resources\Index7.cshtml" />
     <Content Include="Views\Resources\Index8.cshtml" />
     <Content Include="Views\Resources\Index9.cshtml" />
+    <Content Include="Views\Resources\Index12.cshtml" />
+    <Content Include="Views\Resources\Index13.cshtml" />
+    <Content Include="Views\Resources\Index14.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
