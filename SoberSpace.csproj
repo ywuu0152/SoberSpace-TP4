@@ -140,6 +140,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\GetHelpController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrivacyController.cs" />
@@ -190,8 +191,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="IMG\8-Ways-to-Extract-Value-from-Customer-Data---Blog.jpg" />
     <Content Include="IMG\cybersecurity42.jpg" />
     <Content Include="IMG\Hero_image_for_DPD.png" />
+    <Content Include="IMG\iStock-1221293664-1.jpg" />
     <Content Include="IMG\privacy_istock_022414.jpg" />
     <Content Include="IMG\Removed_logo.png" />
     <Content Include="IMG\S1.jpg" />
@@ -441,6 +444,7 @@
     <Content Include="Views\Resources\Index13.cshtml" />
     <Content Include="Views\Resources\Index14.cshtml" />
     <Content Include="Views\Privacy\Index.cshtml" />
+    <Content Include="Views\Data\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
