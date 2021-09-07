@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HttpAuthModule, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HttpAuthModule.2.2.2.0\lib\net45\HttpAuthModule.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -254,6 +257,7 @@
     <Content Include="IMG\mapbox-icon.png" />
     <Content Include="IMG\Rehab\pin.png" />
     <Content Include="IMG\Rehab\icons8-location-24.png" />
+    <Content Include="IMG\Services\service.png" />
     <Content Include="IMG\Services\Services_cover.jpg" />
     <Content Include="IMG\Services\Resources_main.jpeg" />
     <Content Include="IMG\Services\S1.jpg" />
