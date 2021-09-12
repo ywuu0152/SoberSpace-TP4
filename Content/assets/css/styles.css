@@ -1,0 +1,28 @@
+.text-left {
+  text-align: left!important;
+  padding-left: 65px;
+}
+
+#introp {
+  padding-left: 65px;
+}
+
+.btn.btn-primary {
+  padding-left: initial;
+}
+
+#button-para {
+  padding-left: 65;
+  margin-left: 65px;
+}
+
+#image-1 {
+  /*align: left;*/
+  left: 904px;
+}
+
+#immage-left {
+  vertical-align: middle;
+  float: left;
+}
+

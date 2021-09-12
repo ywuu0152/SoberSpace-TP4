@@ -1,0 +1,245 @@
+﻿-@{
+    ViewBag.Title = "Home";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo: Add custom markers in Mapbox GL JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+          rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            max-height: 700px;
+        }
+
+        .marker {
+            /*            background-image: url('../../IMG/mapbox-icon.png');*/
+            background-image: url('../../IMG/Rehab/icons8-location-24.png');
+            /**/ /*background-image: url('../../IMG/Rehab/pin.png');*/
+            background-size: cover;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+
+        .mapboxgl-popup-content {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="img-fluid" src="~/IMG/Rehab/rehab.jpg" style="margin-right: 7px; ">
+    </div>
+    @*<br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br /><br />*@
+
+    <div id="map"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibmlraXRoYS12YW51bXUiLCJhIjoiY2tndGF3NmNrMGR4NzMycTEyNTdjMWZhZyJ9.mKdq8bfa3lZdkGaaF6pbYQ';
+
+        const geojson = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.9777113, -37.8443767]
+                    },
+                    'properties': {
+                        'title': 'Seasons Bali Drug Rehab',
+                        'description': 'Suite 4, 20 Commercial Road, Melbourne 3004 '
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [145.0437682, -37.8918238]
+                    },
+                    'properties': {
+                        'title': 'Self Help Addiction Resource Centre',
+                        'description': '140 Grange Road, Carnegie 3163'
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [145.0346851, -37.8230011]
+                    },
+                    'properties': {
+                        'title': 'Access Health and Community - Hawthorn',
+                        'description': '378 Burwood Road, Hawthorn 3122'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.985231, -37.7164881]
+                    },
+                    'properties': {
+                        'title': 'UNITINGCARE REGEN',
+                        'description': '26 Jessie Street, Coburg 3058'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [145.2104703, -37.9848958]
+                    },
+                    'properties': {
+                        'title': 'Monash Health Youth Drug and Alcohol Service',
+                        'description': '1Level 1 Suite 1A, 314-326 Thomas Street, Dandenong 3175'
+                    }
+                },
+                //----------------------------------------------------------------------------------------------------------------------------
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.8967801, -37.8038953]
+                    },
+                    'properties': {
+                        'title': 'Cohealth - Footscray - Nicholson Street',
+                        'description': '215 Nicholson Street, Footscray 3011'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.9594253, -37.8177337]
+                    },
+                    'properties': {
+                        'title': 'Al-Anon Family Groups - Victorian Southern Area',
+                        'description': 'Level 7 Suite 2, 43-51 Queen Street, Melbourne 3000'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.8939529, -37.8035716]
+                    },
+                    'properties': {
+                        'title': 'The Salvation Army',
+                        'description': 'James Barker House Aged Care Centre, 64 BUCKLEY STREET, Footscray 3011'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [145.1221822, -38.1429808]
+                    },
+                    'properties': {
+                        'title': 'Stepping Up - Frankston-Mornington Peninsula',
+                        'description': '9c Station Street, Frankston 3199'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.9840801, -37.8595258]
+                    },
+                    'properties': {
+                        'title': 'Winja Ulupna Womens Recovery Centre',
+                        'description': '14 Charnwood Crescent, St Kilda 3182'
+                    }
+                },
+
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [144.92973593256, -37.7772525454575]
+                    },
+                    'properties': {
+                        'title': 'Elysium Group',
+                        'description': '412 Mt Alexander Road, Ascot Vale 3032'
+                    }
+                }
+
+            ]
+        };
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            //style: 'mapbox://styles/mapbox/light-v10',
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+
+            center: [145.133957, -37.907803],
+            zoom: 8
+        });
+
+        // add markers to map
+        for (const { geometry, properties } of geojson.features) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
+
+            // make a marker for each feature and add it to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                        .setHTML(
+                            `<h3>${properties.title}</h3><p>${properties.description}</p>`
+                        )
+                )
+                .addTo(map);
+        }
+
+
+    </script>
+</body>
+</html>

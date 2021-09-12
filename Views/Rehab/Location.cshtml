@@ -1,0 +1,755 @@
+﻿
+@{
+    ViewBag.Title = "Location";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo: Build a store locator using Mapbox.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+          rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js"></script>
+    <link href="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css"
+          rel="stylesheet" />
+    <link href="~/Content/New_BootstrapFiles/assets/css/style.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+
+    <style>
+
+        .body {
+            color: #404040;
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            margin-top: 75px;
+        }
+       
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        a {
+            color: #404040;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #101010;
+            }
+
+        .sidebar {
+            position: absolute;
+            width: 33.3333%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            border-right: 1px solid rgba(0, 0, 0, 0.25);
+        }
+
+        .pad2 {
+            padding: 20px;
+        }
+
+        .quiet {
+            color: #888;
+        }
+
+        .map {
+            position: absolute;
+            left: 33.3333%;
+            width: 66.6666%;
+            top: 0;
+            bottom: 0;
+        }
+
+        .heading {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            min-height: 60px;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+
+        .listings {
+            height: 100%;
+            overflow: auto;
+            padding-bottom: 60px;
+        }
+
+            .listings .item {
+                border-bottom: 1px solid #eee;
+                padding: 10px;
+                text-decoration: none;
+            }
+
+                .listings .item:last-child {
+                    border-bottom: none;
+                }
+
+                .listings .item .title {
+                    display: block;
+                    color: black;
+                    font-weight: 700;
+                }
+
+                    .listings .item .title small {
+                        font-weight: 400;
+                    }
+
+                    .listings .item.active .title,
+                    .listings .item .title:hover {
+                        color: #FFEE99;
+                    }
+
+                .listings .item.active {
+                    background-color: #f8f8f8;
+                }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 3px;
+            border-left: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #FFEE99;
+            border-radius: 0;
+        }
+
+
+
+        /* Marker tweaks */
+        .leaflet-popup-close-button {
+            display: none;
+        }
+
+        .leaflet-popup-content {
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+            padding: 0;
+            width: 200px;
+        }
+
+        .leaflet-popup-content-wrapper {
+            padding: 0;
+        }
+
+        .leaflet-popup-content h3 {
+            background: #FFEE99;
+            color: #fff;
+            margin: 0;
+            display: block;
+            padding: 10px;
+            border-radius: 3px 3px 0 0;
+            font-weight: 700;
+            margin-top: -15px;
+        }
+
+        .leaflet-popup-content div {
+            padding: 10px;
+        }
+
+        .leaflet-container .leaflet-marker-icon {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br />
+
+
+    <div class="sidebar">
+        <div class="heading">
+            <h1>Our locations</h1>
+        </div>
+        <div id="listings" class="listings"></div>
+    </div>
+    <div id="map" class="map"></div>
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoibmlraXRoYS12YW51bXUiLCJhIjoiY2tndGF3NmNrMGR4NzMycTEyNTdjMWZhZyJ9.mKdq8bfa3lZdkGaaF6pbYQ';
+        const geojson = [
+            {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.9777113, -37.8443767]
+                        },
+                        'properties': {
+                            'phoneFormatted': '1300 957 319',
+                            'phone': '1300 957 319',
+                            'address': 'Seasons Bali Drug Rehab',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at Suite 4, 20 Commercial Road, Melbourne 3004',
+
+                            'postalCode': '3004',
+                            'state': 'VIC'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.0437682, -37.8918238]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9818 6703',
+                            'phone': '03 9818 6703',
+                            'address': 'Self Help Addiction Resource Centre',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': '140 Grange Road, Carnegie 3163',
+                            'postalCode': '3163',
+                            'state': 'VIC'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.0346851, -37.8230011]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9573 1700',
+                            'phone': '03 9573 1700',
+                            'address': 'Access Health and Community - Hawthorn',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 378 Burwood Road, Hawthorn 3122',
+                            'postalCode': '3122',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.985231, -37.7164881]
+                        },
+                        'properties': {
+                            'phoneFormatted': ' 1800 700 514',
+                            'phone': ' 1800 700 514',
+                            'address': 'UNITINGCARE REGEN',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 26 Jessie Street, Coburg 3058',
+                            'postalCode': '3058',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.2104703, -37.9848958]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9556 5255',
+                            'phone': '03 9556 5255',
+                            'address': 'Monash Health Youth Drug and Alcohol Service',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 1Level 1 Suite 1A, 314-326 Thomas Street, Dandenong 3175',
+                            'postalCode': '3175',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.8967801, -37.8038953]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9448 5510',
+                            'phone': '03 9448 5510',
+                            'address': 'Cohealth - Footscray - Nicholson Street',
+                            'city': 'Melbourne',
+                            'country': 'Australia ',
+                            'crossStreet': 'at 215 Nicholson Street, Footscray 3011',
+
+                            'postalCode': '3011',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.9594253, -37.8177337]
+                        },
+                        'properties': {
+                            'phoneFormatted': '1300 252 666',
+                            'phone': '31300 252 666',
+                            'address': 'Al-Anon Family Groups - Victorian Southern Area',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at Level 7 Suite 2, 43-51 Queen Street, Melbourne 3000',
+                            'postalCode': '3000',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.8939529, -37.8035716]
+                        },
+                        'properties': {
+                            'phoneFormatted': '392834000',
+                            'phone': '392834000',
+                            'address': 'The Salvation Army',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at James Barker House Aged Care Centre, 64 BUCKLEY STREET, Footscray 3011',
+                            'postalCode': '3011',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.1221822, -38.1429808]
+                        },
+                        'properties': {
+                            'phoneFormatted': '1800 828 466',
+                            'phone': '1800 828 466',
+                            'address': 'Stepping Up - Frankston-Mornington Peninsula',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 9c Station Street, Frankston 3199.',
+                            'postalCode': '3199',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.9840801, -37.8595258]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9525 5442',
+                            'phone': '03 9525 5442',
+                            'address': 'Winja Ulupna Womens Recovery Centre',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 14 Charnwood Crescent, St Kilda 3182.',
+
+                            'postalCode': '3182',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.92973593256, -37.7772525454575]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9304 4945',
+                            'phone': '03 9304 4945',
+                            'address': 'Elysium Group',
+                            'city': 'Melborune',
+                            'country': 'Australia',
+                            'crossStreet': 'at 412 Mt Alexander Road, Ascot Vale 3032.',
+
+                            'postalCode': '3032',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.917469668921, -37.7028415968899]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9304 9100',
+                            'phone': '03 9304 9100',
+                            'address': 'Youth Projects',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 6 Hartington Street, Glenroy 3046',
+                            'postalCode': '3046',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.831116913101, -37.7831739924691]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9927 6222',
+                            'phone': '03 9927 6222',
+                            'address': 'headspace - Sunshine',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at Visy Cares Hub, 80b Harvester Road, Sunshine 3020',
+                            'postalCode': '3020',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.917469668921, -37.7028415968899]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9680 8444',
+                            'phone': '03 9680 8444',
+                            'address': 'MacKillop Family Services - Community Programs',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 118 Commercial Road, Footscray 3011',
+                            'postalCode': '3011',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.918345113099, -37.7046784474814]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9304 1011',
+                            'phone': '03 9304 1011',
+                            'address': 'HeadSpace - Glenroy',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 2A Hartington Street, Glenroy 3046',
+                            'postalCode': '3046',
+                            'state': 'VIC.'
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.949129282441, -37.7934410378517]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9345 5522',
+                            'phone': '03 9345 5522',
+                            'address': 'The Royal Childrens Hospital Melbourne',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 50 Flemington Rd,Parkville VIC 3052',
+                            'postalCode': '3052',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.059918109426, -37.7565128654771]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9496 5000',
+                            'phone': '03 9496 5000',
+                            'address': 'The Victorian Posions Information Centre',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 145 Studley Rd, Heidelberg VIC 3084',
+                            'postalCode': '3084',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.314969703521, -37.8966707943085]
+                        },
+                        'properties': {
+                            'phoneFormatted': '1300 342 255',
+                            'phone': '1300 342 255',
+                            'address': 'Angliss Hospital Emergency Room',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at Angliss Hospital,Albert St,Upper Ferntree Gully VIC 3156',
+                            'postalCode': '3156',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.996185178742, -37.8127851971353]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9418 9800',
+                            'phone': '03 9418 9800',
+                            'address': 'North Richmond Community Health',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 23 Lennox St, Richmond VIC 3121',
+                            'postalCode': '3121',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.088020320235, -37.8938807856531]
+                        },
+                        'properties': {
+                            'phoneFormatted': '1300 552 509',
+                            'phone': '1300 552 509',
+                            'address': 'Link Health and Community',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 2 Euneva Ave,Glen Waverley VIC 3150',
+                            'postalCode': '3150',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.081452713007, -37.9908366516234]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 8587 0200',
+                            'phone': '03 8587 0200',
+                            'address': 'Central Bayside Community Health Services',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 335/337 Nepean Hwy,Parkdale VIC 3195',
+                            'postalCode': '3195',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.687102031594, -37.8644077159869]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9219 7142',
+                            'phone': '03 9219 7142',
+                            'address': 'IPC Health -Deer Park',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': '106 Station Rd,Deer Park VIC 3023',
+                            'postalCode': '3023',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [145.120794909685, -37.8177714279937]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 9898 1965',
+                            'phone': '03 9898 1965',
+                            'address': 'Chinsese Community Social Services Centre Inc',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 17-21 Market St,Box Hill VIC 3128',
+                            'postalCode': '3128',
+                            'state': 'VIC.'
+                        }
+                    }
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.356717993978, -38.0846093121046]
+                        },
+                        'properties': {
+                            'phoneFormatted': '03 4215 8000',
+                            'phone': '03 4215 8000',
+                            'address': 'Barwon Health North',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at 155 Princes Hwy,Norlane VIC 3214',
+                            'postalCode': '3214',
+                            'state': 'VIC.'
+                        }
+                    }
+
+                    ,
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [144.815337011276, -37.7599479212139]
+                        },
+                        'properties': {
+                            'phoneFormatted': '61383451333',
+                            'phone': '61383451333',
+                            'address': 'Sunshine Hospital Emergency Room',
+                            'city': 'Melbourne',
+                            'country': 'Australia',
+                            'crossStreet': 'at Sunshine Hospital, 176 Furlong Rd, St Albans VIC 3021',
+                            'postalCode': '3021',
+                            'state': 'VIC.'
+                        }
+                    }
+
+                ]
+            }
+        ];
+        const map = L.mapbox
+            .map('map')
+            .setView([-37.907803, 145.133957], 10)
+            .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
+
+        map.scrollWheelZoom.disable();
+
+        const listings = document.getElementById('listings');
+        const locations = L.mapbox.featureLayer().addTo(map);
+
+        locations.setGeoJSON(geojson);
+
+        function setActive(el) {
+            const siblings = listings.getElementsByTagName('div');
+            for (const sibling of siblings) {
+                sibling.classList.remove('active');
+            }
+
+            el.classList.add('active');
+        }
+
+        locations.eachLayer((locale) => {
+            // Shorten locale.feature.properties to just `prop` so we're not
+            // writing this long form over and over again.
+            const prop = locale.feature.properties;
+
+            // Each marker on the map.
+            let popup = `<h3>Address</h3><div>${prop.address}`;
+
+            const listing = listings.appendChild(document.createElement('div'));
+            listing.className = 'item';
+
+            const link = listing.appendChild(document.createElement('a'));
+            link.href = '#';
+            link.className = 'title';
+
+            link.innerHTML = `${prop.address}`;
+            if (prop.crossStreet) {
+                link.innerHTML += `<br /><small class="quiet">${prop.crossStreet}</small>`;
+                popup += `<br /><small class="quiet">${prop.crossStreet}</small>`;
+            }
+
+            const details = listing.appendChild(document.createElement('div'));
+            details.innerHTML = `${prop.city}`;
+            if (prop.phone) {
+                details.innerHTML += ` &middot; ${prop.phoneFormatted}`;
+            }
+
+            link.onclick = function () {
+                setActive(listing);
+
+                // When a menu item is clicked, animate the map to center
+                // its associated locale and open its popup.
+                map.setView(locale.getLatLng(), 14);
+                locale.openPopup();
+                return false;
+            };
+
+            // Marker interaction
+            locale.on('click', () => {
+                // 1. center the map on the selected marker.
+                map.panTo(locale.getLatLng());
+
+                // 2. Set active the markers associated listing.
+                setActive(listing);
+            });
+
+            locale.bindPopup(popup);
+
+            //locale.setIcon(
+            //    L.icon({
+            //        iconUrl: '~/IMG/Rehab/icons8-location-24.png',
+            //        iconSize: [56, 56],
+            //        iconAnchor: [28, 28],
+            //        popupAnchor: [0, -34]
+            //    })
+            //);
+
+
+
+        });
+    </script>
+</body>
+</html>
+@*<img src="~/IMG/Rehab/icons8-location-24.png" />*@
+
+
