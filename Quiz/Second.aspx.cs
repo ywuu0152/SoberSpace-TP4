@@ -1,37 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Second : System.Web.UI.Page
+namespace SoberSpace.Quiz
 {
-
-    public void Page_Load(object sender, EventArgs e)
+    public partial class Second : System.Web.UI.Page
     {
-        if (!IsPostBack)
+        public void Page_Load(object sender, EventArgs e)
         {
-            Session["score"] = null;
-            Session["strScore"] = null;
+            if (!IsPostBack)
+            {
+                Session["score"] = null;
+                Session["strScore"] = null;
+            }
         }
-    }
 
-    public void ImageButton2_Click(object sender, ImageClickEventArgs e)
-    {
-        // not Null
-        if (this.RadioButtonList1.SelectedIndex == -1)
+        public void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Pelese Select One Option！');</script>");
-            this.RadioButtonList1.Focus();
-            return;
+            // not Null
+            if (this.RadioButtonList1.SelectedIndex == -1)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Pelese Select One Option！');</script>");
+                this.RadioButtonList1.Focus();
+                return;
+            }
+            int score = 0;
+            string strScore = "";
+            score = Convert.ToInt32(this.RadioButtonList1.SelectedValue);
+            strScore = this.RadioButtonList1.SelectedValue + "|";
+            Session["score"] = score.ToString();
+            Session["strScore"] = strScore.ToString();
+            Response.Redirect("Second1.aspx");
         }
-        int score = 0;
-        string strScore = "";
-        score = Convert.ToInt32(this.RadioButtonList1.SelectedValue);
-        strScore = this.RadioButtonList1.SelectedValue + "|";
-        Session["score"] = score.ToString();
-        Session["strScore"] = strScore.ToString();
-        Response.Redirect("Second1.aspx");
     }
 }

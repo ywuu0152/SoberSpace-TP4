@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second1.aspx.cs" Inherits="Second1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Second1.aspx.cs" Inherits="SoberSpace.Quiz.Second1" %>
 
- 
+<!DOCTYPE html>
 
 <!DOCTYPE html>
  <html xmlns="http://www.w3.org/1999/xhtml">

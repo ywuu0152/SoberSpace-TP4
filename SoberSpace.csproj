@@ -153,49 +153,85 @@
       <DependentUpon>Second.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\Second.aspx.designer.cs">
+      <DependentUpon>Second.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\Second1.aspx.cs">
       <DependentUpon>Second1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Second1.aspx.designer.cs">
+      <DependentUpon>Second1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quiz\Second2.aspx.cs">
       <DependentUpon>Second2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\Second2.aspx.designer.cs">
+      <DependentUpon>Second2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\Second3.aspx.cs">
       <DependentUpon>Second3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Second3.aspx.designer.cs">
+      <DependentUpon>Second3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quiz\Second4.aspx.cs">
       <DependentUpon>Second4.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\Second4.aspx.designer.cs">
+      <DependentUpon>Second4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\Second5.aspx.cs">
       <DependentUpon>Second5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\Second5.aspx.designer.cs">
+      <DependentUpon>Second5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quiz\SecondReport.aspx.cs">
       <DependentUpon>SecondReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\SecondReport.aspx.designer.cs">
+      <DependentUpon>SecondReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\SecondReport1.aspx.cs">
       <DependentUpon>SecondReport1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\SecondReport1.aspx.designer.cs">
+      <DependentUpon>SecondReport1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quiz\SecondReport2.aspx.cs">
       <DependentUpon>SecondReport2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\SecondReport2.aspx.designer.cs">
+      <DependentUpon>SecondReport2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\SecondReport3.aspx.cs">
       <DependentUpon>SecondReport3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\SecondReport3.aspx.designer.cs">
+      <DependentUpon>SecondReport3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Quiz\SecondReport4.aspx.cs">
       <DependentUpon>SecondReport4.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Quiz\SecondReport4.aspx.designer.cs">
+      <DependentUpon>SecondReport4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\SecondView.aspx.cs">
       <DependentUpon>SecondView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\SecondView.aspx.designer.cs">
+      <DependentUpon>SecondView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

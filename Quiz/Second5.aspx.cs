@@ -1,40 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Second5 : System.Web.UI.Page
+namespace SoberSpace.Quiz
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Second5 : System.Web.UI.Page
     {
-
-        if (!IsPostBack)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["score"] == null || Session["strScore"] == null || Session["score"].ToString() == "" || Session["strScore"].ToString() == "")
+
+            if (!IsPostBack)
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Data Load Fail ！');window.location.href='Second.aspx'</script>");
-                return;
+                if (Session["score"] == null || Session["strScore"] == null || Session["score"].ToString() == "" || Session["strScore"].ToString() == "")
+                {
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Data Load Fail ！');window.location.href='Second.aspx'</script>");
+                    return;
+                }
             }
         }
-    }
 
-    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-    {
-        // not Null
-        if (this.RadioButtonList1.SelectedIndex == -1)
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Pelese Select One Option！');</script>");
-            this.RadioButtonList1.Focus();
-            return;
+            // not Null
+            if (this.RadioButtonList1.SelectedIndex == -1)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Pelese Select One Option！');</script>");
+                this.RadioButtonList1.Focus();
+                return;
+            }
+            int score = 0;
+            string strScore = "";
+            score = Convert.ToInt32(this.RadioButtonList1.SelectedValue);
+            strScore = this.RadioButtonList1.SelectedValue + "|";
+            Session["score"] = (Convert.ToInt32(Session["score"].ToString()) + score).ToString();
+            Session["strScore"] = Session["strScore"] + strScore.ToString();
+            Response.Redirect("SecondView.aspx");
         }
-        int score = 0;
-        string strScore = "";
-        score = Convert.ToInt32(this.RadioButtonList1.SelectedValue);
-        strScore = this.RadioButtonList1.SelectedValue + "|";
-        Session["score"] = (Convert.ToInt32(Session["score"].ToString()) + score).ToString();
-        Session["strScore"] = Session["strScore"] + strScore.ToString();
-        Response.Redirect("SecondView.aspx");
     }
 }

@@ -1,12 +1,11 @@
-﻿
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second.aspx.cs" Inherits="Second" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Second.aspx.cs" Inherits="SoberSpace.Quiz.Second" %>
 
 <!DOCTYPE html>
- <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/swiper.css" />
@@ -16,12 +15,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'/>
 
     <!-- Vendor CSS Files -->
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,11 +42,10 @@
             align-items: center;
         }
     </style>
-
 </head>
 <body>
 
-        <!-- ======= Header Section======= -->
+     <!-- ======= Header Section======= -->
     <header id="header" class="fixed-top" style="background-color:black">
         <div class="container d-flex">
             <img class="img-fluid" src="../IMG/Final_logo.png" style="width: 50px; height:50px; padding-right: 15px;"/>
@@ -79,13 +77,12 @@
     </header>
 
     <!-- End of Header Section-->
-
-    <div style="text-align: center">
+        <div style="text-align: center">
         <img class="img-fluid" src="../IMG/Quiz/5.jpg" >
     </div>
 
-    <form id="form1" runat="server" >
-         <div id="main">
+    <form id="form1" runat="server">
+        <div id="main">
             <div class="index-sec1">
                 <div class="title">
                     <h3><span>Question Detail </span></h3>
@@ -105,19 +102,19 @@
                                        <table  style="width: 99%">
                                            <tr>
                                            <td style= "Text-Align:left; ">
-                                        &nbsp;<asp:RadioButtonList id="RadioButtonList1" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1"> Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2"> Pretty good</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3"> Tired</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4"> Pretty flat</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5"> Stressed and anxious</asp:ListItem>
-                                        </asp:RadioButtonList>
+                                        &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="1" RepeatDirection="Horizontal">
+                                               <asp:ListItem Text="A little of the time" Value="1"> Unsure</asp:ListItem>
+                                               <asp:ListItem Text="Some of the time" Value="2"> Pretty good</asp:ListItem>
+                                               <asp:ListItem Text="Good part of the time" Value="3"> Tired</asp:ListItem>
+                                               <asp:ListItem Text="Most of the time" Value="4"> Pretty flat</asp:ListItem>
+                                               <asp:ListItem Text="Most of the time" Value="5"> Stressed and anxious</asp:ListItem>
+                                           </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
                                     </p>
                                 </div>
                                 <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="../IMG/Quiz/cont.png" Height="100px"  OnClick="ImageButton2_Click" BorderStyle="None" />
-
+                              
                             </div>
  
 
@@ -126,10 +123,9 @@
             </div>
 
         </div>
-
     </form>
 
-    <hr />
+     <hr />
 
     <!-- ======= Footer Section ======= -->
     <footer id="footer">
@@ -181,10 +177,9 @@
 
     </footer>
 
-
 </body>
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/swiper.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript">
