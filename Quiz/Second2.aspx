@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second2.aspx.cs" Inherits="iteration1_Second2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second2.aspx.cs" Inherits="Second2" %>
 
 <!DOCTYPE html>
  <html xmlns="http://www.w3.org/1999/xhtml">

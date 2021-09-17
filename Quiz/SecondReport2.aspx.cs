@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class iteration1_SecondReport : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+    protected void Page_Load2(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {

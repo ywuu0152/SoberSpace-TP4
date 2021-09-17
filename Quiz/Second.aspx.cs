@@ -5,9 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class iteration1_Second : System.Web.UI.Page
+public partial class Second : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+
+    public void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
@@ -16,7 +17,7 @@ public partial class iteration1_Second : System.Web.UI.Page
         }
     }
 
-    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    public void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
         // not Null
         if (this.RadioButtonList1.SelectedIndex == -1)

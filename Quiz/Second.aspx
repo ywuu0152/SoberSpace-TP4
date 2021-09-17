@@ -1,6 +1,6 @@
 ﻿
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second.aspx.cs" Inherits="iteration1_Second" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Second.aspx.cs" Inherits="Second" %>
 
 
 <!DOCTYPE html>
@@ -12,9 +12,8 @@
     <link rel="stylesheet" type="text/css" href="../css/swiper.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-        <title>@ViewBag.Title - Sober Space </title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title> Sober Space </title>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <meta content="" name="description">
@@ -106,7 +105,7 @@
                                        <table  style="width: 99%">
                                            <tr>
                                            <td style= "Text-Align:left; ">
-                                        &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
+                                        &nbsp;<asp:RadioButtonList id="RadioButtonList1" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
                                             <asp:ListItem Text="A little of the time" Value="1"> Unsure</asp:ListItem>
                                             <asp:ListItem Text="Some of the time" Value="2"> Pretty good</asp:ListItem>
                                             <asp:ListItem Text="Good part of the time" Value="3"> Tired</asp:ListItem>
@@ -221,8 +220,6 @@
             },
 
         });
-
-
     });
 </script>
 </html>

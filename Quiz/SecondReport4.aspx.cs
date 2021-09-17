@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class iteration1_SecondReport : System.Web.UI.Page
+public partial class SecondReport : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+    protected void Page_Load4(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {

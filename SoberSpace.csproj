@@ -149,10 +149,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quiz\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Quiz\Second.aspx.cs">
       <DependentUpon>Second.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,7 +465,6 @@
     <Content Include="js\common.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\swiper.js" />
-    <Content Include="Quiz\Login.aspx" />
     <Content Include="Quiz\Second.aspx" />
     <Content Include="Quiz\Second1.aspx" />
     <Content Include="Quiz\Second2.aspx" />
