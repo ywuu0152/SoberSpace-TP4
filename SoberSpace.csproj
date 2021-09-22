@@ -419,6 +419,7 @@
     <Content Include="IMG\Home\Home-1.jpg" />
     <Content Include="IMG\Home\icons8-computer-50.png" />
     <Content Include="IMG\Home\icons8-magnifying-glass-50.png" />
+    <Content Include="IMG\Home\icons8-musical-notes-50.png" />
     <Content Include="IMG\New-3.png" />
     <Content Include="IMG\Final_logo.png" />
     <Content Include="IMG\Fact\Fact2.png" />
@@ -427,6 +428,7 @@
     <Content Include="IMG\Quiz\5.jpg" />
     <Content Include="IMG\Quiz\6.jpg" />
     <Content Include="IMG\Quiz\cont.png" />
+    <Content Include="IMG\Home\icons8-quiz-50.png" />
     <Content Include="IMG\Quiz\print.png" />
     <Content Include="IMG\Quiz\sub.png" />
     <Content Include="IMG\Services\1.jpg" />
