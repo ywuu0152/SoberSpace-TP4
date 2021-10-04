@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SecondReport.aspx.cs" Inherits="SoberSpace.Quiz.SecondReport" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="SoberSpace.Quiz.WebForm1" %>
 
 <!DOCTYPE html>
  <html xmlns="http://www.w3.org/1999/xhtml">
@@ -95,7 +95,7 @@
                                 <div class="inner-wp">
 
                                     <h1 style="font-size:300%">
-                                        May be you should                                        
+                                        May be you should                                      
                                     </h1>
                                 </div>
 
@@ -272,25 +272,24 @@
         </div>
     </form>
 
-<%--        <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        
+        <div class="container my-5">
+            <h1 class="display-4 fw-bold lh-1 " style="text-align:center"> May be you should</h1>
+            <br />
+            <br />
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>
+<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
                 <p class="lead" style="text-align:justify;">
-                    People with drug problems often have gotten in with the wrong crowd—and they don’t want to turn
-                    away from these so-called friends for fear of being alone. So, as a friend, please walk one step forward to them,
-                    ask them how are you doing. Telling your friend that you’re concerned can be a big help.Though your friend may be
-                    bothered by their situation but be patient and listen to them, you can gradually open their mind. The following
-                    drill will help you out in understanding how to approach your friend.  
+                    Do you need professional advice? Check out for the experts nearby. 
                 </p>
-
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 ">
-                <img src="~/IMG/Services/250.jpg" alt="" class="img-fluid" />
+                <img src="../IMG/report/Rehab2.jpg" alt="" class="img-fluid" />
 
             </div>
         </div>
-    </div>--%>
+    </div>
 
 
 

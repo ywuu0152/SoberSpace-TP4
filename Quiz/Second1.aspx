@@ -106,17 +106,17 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Dealing really well</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">Not too well, feeling overwhelmed</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">Life is hard at the moment so i’ ve been putting a lot of things off</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">Dealing with stuff as it comes</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Unsure</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Dealing really well</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;Not too well, feeling overwhelmed</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;Life is hard at the moment so i’ ve been putting a lot of things off</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;Dealing with stuff as it comes</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
                                     </p>
                                 </div>
-                                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="../IMG/Quiz/cont.png" Height="100px"  OnClick="ImageButton2_Click" BorderStyle="None" />
+                                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="../IMG/Quiz/icons8-right-100.png" Height="100px"  OnClick="ImageButton2_Click" BorderStyle="None" />
 
                             </div>
  

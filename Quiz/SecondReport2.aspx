@@ -95,7 +95,7 @@
                                 <div class="inner-wp">
 
                                     <h1 style="font-size:300%">
-                                        Report                                      
+                                        May be you should                                        
                                     </h1>
                                 </div>
 
@@ -104,6 +104,7 @@
                         <li style="width: 100%">
                             <div class="item-box">
                                 <h1 style="font-size:200%">You are under slight pressure</h1>
+                                <br />
                                 <p>Dear friend, it seems that you are under slight pressure now, but don't worry, this is normal. Because everyone in this world will always encounter some unsatisfactory and unstable situations, 
                                     and similarly, there will be some emotional ups and downs and emotional instability. Such problems are played out by our side every day. For example, you have to hand in your homework, 
                                     but you have not finished the last part of the concluding remarks. You are going to class today, but your pet is suddenly sick. It would help if you took her to the hospital. 
@@ -117,7 +118,7 @@
 
 
                                    </div>
-                            <div class="item-box">
+                           <div class="item-box">
                                 <div class="inner-wp" style="width: 99%">
                                     <p>1. How are you feeling right now?</p>
                                     <p style="width: 99%">
@@ -125,11 +126,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Pretty good</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">Tired</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">Pretty flat</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">Stressed and anxious</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Unsure</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Pretty good</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;Tired</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;Pretty flat</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;Stressed and anxious</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -146,11 +147,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList2" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Dealing really well</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">Not too well, feeling overwhelmed</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">Life is hard at the moment so i’ ve been putting a lot of things off</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">Dealing with stuff as it comes</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Unsure</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Dealing really well</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;Not too well, feeling overwhelmed</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;Life is hard at the moment so i’ ve been putting a lot of things off</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;Dealing with stuff as it comes</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -167,11 +168,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList3" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Motivated and powering through</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">Just going through the motions to gets stuff done</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">Not very</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">It’s tricky but i’m making it work</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Unsure</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Motivated and powering through</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;Just going through the motions to gets stuff done</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;Not very</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;It’s tricky but i’m making it work</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -190,11 +191,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList4" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Yes,and i’m loving them</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Yes,but they’re not as enjoyable as they used to be</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">I’m too tired to do them</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">I can’t seem to get motivated</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">I’m too busy and don’t have enough time</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Yes,and i’m loving them</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Yes,but they’re not as enjoyable as they used to be</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;I’m too tired to do them</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;I can’t seem to get motivated</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;I’m too busy and don’t have enough time</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -213,11 +214,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList5" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Unsure</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Just the right amount</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">Not connected,I’m usually too tired</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">Pretty disconnected</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">Too connected...it gets overwhelming</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Unsure</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Just the right amount</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;Not connected,I’m usually too tired</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;Pretty disconnected</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;Too connected...it gets overwhelming</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -237,11 +238,11 @@
                                            <tr>
                                            <td style= "Text-Align:left; ">
                                         &nbsp;<asp:RadioButtonList ID="RadioButtonList6" runat="server" RepeatColumns="1"   RepeatDirection="Horizontal"  >
-                                            <asp:ListItem Text="A little of the time" Value="1">Confident and looking forward to it</asp:ListItem>
-                                            <asp:ListItem Text="Some of the time" Value="2">Really uncertain</asp:ListItem>
-                                            <asp:ListItem Text="Good part of the time" Value="3">I haven’t had to the energy to think about it,I’m just taking it day-by-day</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="4">I don’t feel motivated by it</asp:ListItem>
-                                            <asp:ListItem Text="Most of the time" Value="5">Pretty anxious about it</asp:ListItem>
+                                            <asp:ListItem Text="A little of the time" Value="1">&nbsp;Confident and looking forward to it</asp:ListItem>
+                                            <asp:ListItem Text="Some of the time" Value="2">&nbsp;Really uncertain</asp:ListItem>
+                                            <asp:ListItem Text="Good part of the time" Value="3">&nbsp;I haven’t had to the energy to think about it,I’m just taking it day-by-day</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="4">&nbsp;I don’t feel motivated by it</asp:ListItem>
+                                            <asp:ListItem Text="Most of the time" Value="5">&nbsp;Pretty anxious about it</asp:ListItem>
                                         </asp:RadioButtonList>
                                                </td></tr>
                                            </table>
@@ -256,7 +257,7 @@
                                 <div class="inner-wp">
 
                                     <p>
-                                        <img src="../IMG/Quiz/print.png"  onclick="print();"/>
+                                        <img src="../IMG/Quiz/icons8-打印-100.png"  onclick="print();"/>
                                        
                                     </p>
                                 </div>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+
+    <script src="js/echarts.min.js"></script>
+
+
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+
+        var option;
+
+
+
+        option = {
+            angleAxis: {
+                type: 'category',
+                data: ['10–19', '20–29', '30–39', '40–49', '50–59', '60+']
+            },
+            radiusAxis: {
+                max: 100
+            },
+            polar: {},
+            series: [
+                {
+                    type: 'bar',
+                    data: [37.13, 42.13, 43.08, 43.09, 43.01, 43.27],
+                    coordinateSystem: 'polar',
+                    name: 'Counselling',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [2.92, 5.64, 7.25, 9.19, 11.66, 13.75],
+                    coordinateSystem: 'polar',
+                    name: 'Withdrawal management',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [17.88, 20.89, 22.31, 20.33, 18.34, 20.1],
+                    coordinateSystem: 'polar',
+                    name: 'Assessment only',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [18.58, 13.09, 11.04, 10.87, 11.13, 8.44],
+                    coordinateSystem: 'polar',
+                    name: 'Support and case management',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [2.1, 4.34, 5.24, 4.64, 3.46, 1.53],
+                    coordinateSystem: 'polar',
+                    name: 'Rehabilitation',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [0.1, 1.07, 2.32, 2.58, 2.02, 1.45],
+                    coordinateSystem: 'polar',
+                    name: 'Pharmacotherapy',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [18.65, 9.92, 5.24, 5.18, 5.86, 6.28],
+                    coordinateSystem: 'polar',
+                    name: 'Information and education',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                },
+                {
+                    type: 'bar',
+                    data: [2.64, 2.91, 3.51, 4.13, 4.53, 5.17],
+                    coordinateSystem: 'polar',
+                    name: 'Other',
+                    stack: 'a',
+                    emphasis: {
+                        focus: 'series'
+                    }
+                }
+            ],
+
+            legend: {
+                show: true,
+                data: [
+                    'Counselling',
+                    'Withdrawal management',
+                    'Assessment only',
+                    'Support and case management',
+                    'Rehabilitation',
+                    'Pharmacotherapy',
+                    'Information and education',
+                    'Other'
+                ]
+            }
+        };
+
+        option && myChart.setOption(option);
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+    </script>
+</body>
+</html>

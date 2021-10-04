@@ -11,7 +11,7 @@ namespace SoberSpace.Quiz
 {
 
 
-    public partial class SecondReport
+    public partial class WebForm1
     {
 
         /// <summary>

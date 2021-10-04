@@ -233,6 +233,13 @@
     <Compile Include="Quiz\SecondView.aspx.designer.cs">
       <DependentUpon>SecondView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Quiz\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cannabis.html" />
@@ -388,9 +395,12 @@
     <Content Include="Content\New_BootstrapFiles\assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="Content\New_BootstrapFiles\assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="Content\New_BootstrapFiles\Slider.css" />
+    <Content Include="css\bt.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
     <Content Include="css\swiper.css" />
+    <Content Include="echart 2.html" />
+    <Content Include="echart.html" />
     <Content Include="Ecstasy.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -398,6 +408,7 @@
     <Content Include="Heroin.html" />
     <Content Include="Homepage Treatment.html" />
     <Content Include="IMG\About us.jpg" />
+    <Content Include="IMG\Fact\x1578506710527.jpg.pagespeed.ic.rCIK2hNcKU.jpg" />
     <Content Include="IMG\GetHelp\Explore_cover.jpg" />
     <Content Include="IMG\Fact\Fact1.jpg" />
     <Content Include="IMG\GetHelp-1.jpg" />
@@ -429,8 +440,15 @@
     <Content Include="IMG\Quiz\6.jpg" />
     <Content Include="IMG\Quiz\cont.png" />
     <Content Include="IMG\Home\icons8-quiz-50.png" />
+    <Content Include="IMG\Quiz\icons8-r2.gif" />
+    <Content Include="IMG\Quiz\icons8-right-100.png" />
+    <Content Include="IMG\Quiz\icons8-双右.gif" />
+    <Content Include="IMG\Quiz\icons8-file-100.png" />
+    <Content Include="IMG\Quiz\icons8-打印-100.png" />
     <Content Include="IMG\Quiz\print.png" />
     <Content Include="IMG\Quiz\sub.png" />
+    <Content Include="IMG\report\Rehab.jpg" />
+    <Content Include="IMG\report\rehab2.jpg" />
     <Content Include="IMG\Services\1.jpg" />
     <Content Include="IMG\Services\10.jpg" />
     <Content Include="IMG\Services\11.jpg" />
@@ -500,7 +518,9 @@
     <Content Include="IMG\Services\S9.jpg" />
     <Content Include="IMG\Home\signs of drug addiction.jpg" />
     <Content Include="IMG\Slider-try.png" />
+    <Content Include="js\bt.js" />
     <Content Include="js\common.js" />
+    <Content Include="js\echarts.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\swiper.js" />
     <Content Include="Quiz\Second.aspx" />
@@ -515,6 +535,7 @@
     <Content Include="Quiz\SecondReport3.aspx" />
     <Content Include="Quiz\SecondReport4.aspx" />
     <Content Include="Quiz\SecondView.aspx" />
+    <Content Include="Quiz\WebForm1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -593,6 +614,7 @@
     <Content Include="Content\New_BootstrapFiles\assets\vendor\boxicons\fonts\boxicons.woff2" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Properties\PublishProfiles\IISProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\SoberSpace20211002193746ForIT3 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
