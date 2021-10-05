@@ -144,6 +144,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RehabController.cs" />
     <Compile Include="Controllers\FactsController.cs" />
+    <Compile Include="Controllers\RelaxController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -309,6 +310,7 @@
     <Content Include="Content\cover.css" />
     <Content Include="Content\css\Feature-box.css" />
     <Content Include="Content\css\new-slider.css" />
+    <Content Include="Content\css\Relax.css" />
     <Content Include="Content\New_BootstrapFiles\Accord.css" />
     <Content Include="Content\New_BootstrapFiles\assets\css\style.css" />
     <Content Include="Content\New_BootstrapFiles\assets\img\about-bg.jpg" />
@@ -431,6 +433,7 @@
     <Content Include="IMG\Home\icons8-computer-50.png" />
     <Content Include="IMG\Home\icons8-magnifying-glass-50.png" />
     <Content Include="IMG\Home\icons8-musical-notes-50.png" />
+    <Content Include="IMG\Home\WIA.jpeg" />
     <Content Include="IMG\New-3.png" />
     <Content Include="IMG\Final_logo.png" />
     <Content Include="IMG\Fact\Fact2.png" />
@@ -660,6 +663,7 @@
     <Content Include="Views\Rehab\Location.cshtml" />
     <Content Include="Views\Facts\Resource.cshtml" />
     <Content Include="Views\Facts\Resource2.cshtml" />
+    <Content Include="Views\Relax\Relax.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
