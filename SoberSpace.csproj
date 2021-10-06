@@ -311,6 +311,7 @@
     <Content Include="Content\css\Feature-box.css" />
     <Content Include="Content\css\new-slider.css" />
     <Content Include="Content\css\Relax.css" />
+    <Content Include="Content\css\Gethelp.css" />
     <Content Include="Content\New_BootstrapFiles\Accord.css" />
     <Content Include="Content\New_BootstrapFiles\assets\css\style.css" />
     <Content Include="Content\New_BootstrapFiles\assets\img\about-bg.jpg" />

@@ -28,6 +28,7 @@
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/Content/css/Gethelp.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
     <link href="~/Content/BootstrapFiles/HomePage/assets/css/style.css" rel="stylesheet">
@@ -94,54 +95,106 @@
 
 
         <div class="container d-flex align-items-center justify-content-center flex-wrap">
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
-                        <img src="~/IMG/GetHelp/Symptoms/Brain.png" />
-                    </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Brain</h3>
-                            <p class="fs-6 text-white">
-                                Impaired memory and learning
-                                Increased risk of overdose
-                                Dependance
-                                Withdrawal cravings including: depression, anxiety, insomnia, agitation
-                                Coma and / or death from overdose
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/GetHelp/Symptoms/Brain.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Brain</h3>
+                        <p class="fs-6 text-white">
+                            Impaired memory and learning
+                            Increased risk of overdose
+                            Dependance
+                            Withdrawal cravings including: depression, anxiety, insomnia, agitation
+                            Coma and / or death from overdose
 
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
-                        <img src="~/IMG/GetHelp/Symptoms/Lungs.png" />
-                    </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Lungs</h3>
-                            <p class="fs-6 text-white">Pneumonia (lung disease)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
+        </div>*@
 
-                        <img src="~/IMG/GetHelp/Symptoms/Heart.png" />
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Brain.png" alt="Avatar">
                     </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Heart</h3>
-                            <p class="fs-6 text-white">Heart damage</p>
-                        </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Brain</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Impaired memory and learning
+                            Increased risk of overdose
+                            Dependance
+                            Withdrawal cravings including: depression, anxiety, insomnia, agitation
+                            Coma and / or death from overdose
+
+                        </p>
                     </div>
                 </div>
             </div>
+
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/GetHelp/Symptoms/Lungs.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Lungs</h3>
+                        <p class="fs-6 text-white">Pneumonia (lung disease)</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Lungs.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Lungs</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Pneumonia (lung disease)
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+
+                    <img src="~/IMG/GetHelp/Symptoms/Heart.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Heart</h3>
+                        <p class="fs-6 text-white">Heart damage</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Heart.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Heart</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Heart damage
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <br /><br /><br />
     </section>
@@ -150,41 +203,76 @@
 
 
         <div class="container d-flex align-items-center justify-content-center flex-wrap">
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
-                        <img src="~/IMG/GetHelp/Symptoms/Immune (1).png" />
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/GetHelp/Symptoms/Immune (1).png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Immune System</h3>
+                        <p class="fs-6 text-white">
+                            Increased risk of infection,
+                            Risk of hepatitis, tetanus and HIV
+                        </p>
                     </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Immune System</h3>
-                            <p class="fs-6 text-white">
-                                Increased risk of infection,
-                                Risk of hepatitis, tetanus and HIV
-                            </p>
-                        </div>
-                        <
+                    <
+                </div>
+            </div>
+        </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Immune (1).png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Immune System</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Increased risk of infection,
+                            Risk of hepatitis, tetanus and HIV
+
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
-                        <img src="~/IMG/GetHelp/Symptoms/Stomach.png" />
-                    </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Stomach</h3>
-                            <p class="fs-6 text-white">
-                                Nausea and vomiting,
-                                Chronic constipation,
-                                Loss of appetite leading to poor diet and health
-                            </p>
-                        </div>
+
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/GetHelp/Symptoms/Stomach.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Stomach</h3>
+                        <p class="fs-6 text-white">
+                            Nausea and vomiting,
+                            Chronic constipation,
+                            Loss of appetite leading to poor diet and health
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="box">
+        </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Stomach.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Stomach</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Nausea and vomiting,
+                            Chronic constipation,
+                            Loss of appetite leading to poor diet and health
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="box">
                 <div class="body">
                     <div class="imgContainer">
                         <img src="~/IMG/GetHelp/Symptoms/Body.png" />
@@ -201,7 +289,25 @@
                         </div>
                     </div>
                 </div>
+            </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Body.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Body</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Collapsed veins
+                            Blocked blood vessels caused by the additives and impurities.<br />
+                            Skin infections and abscesses caused by injecting on the same site.
+
+                        </p>
+                    </div>
+                </div>
             </div>
+
         </div>
 
         <br /><br /><br />

@@ -29,6 +29,7 @@
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="~/Content/BootstrapFiles/HomePage/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/Content/css/Gethelp.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
     <link href="~/Content/BootstrapFiles/HomePage/assets/css/style.css" rel="stylesheet">
@@ -97,48 +98,89 @@
 
 
         <div class="container d-flex align-items-center justify-content-center flex-wrap">
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
-                        <img src="~/IMG/GetHelp/Symptoms/Brain.png" />
-                    </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Brain</h3>
-                            <p class="fs-6 text-white">
-                                Anxiety,
-                                Paranoia,
-                                Hallucinations and delirium,
-                                Large pupils,
-                                Loss of consciousness,
-                                Fitting/Seizures,
-                                Irritability, fatigue, difficulty concentrating, low mood (in the days after use)
+
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="~/IMG/GetHelp/Symptoms/Brain.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Brain</h3>
+                        <p class="fs-6 text-white">
+                            Anxiety,
+                            Paranoia,
+                            Hallucinations and delirium,
+                            Large pupils,
+                            Loss of consciousness,
+                            Fitting/Seizures,
+                            Irritability, fatigue, difficulty concentrating, low mood (in the days after use)
 
 
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="body">
-                    <div class="imgContainer">
+        </div>*@
 
-                        <img src="~/IMG/GetHelp/Symptoms/Mouth.png" />
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Brain.png" alt="Avatar">
                     </div>
-                    <div class="content d-flex flex-column align-items-center justify-content-center">
-                        <div>
-                            <h3 class="text-white fs-5">Mouth</h3>
-                            <p class="fs-6 text-white">
-                                Teeth grinding,
-                                Jaw clenching
-                            </p>
-                        </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Brain</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Anxiety,
+                            Paranoia,
+                            Hallucinations and delirium,
+                            Large pupils,
+                            Loss of consciousness,
+                            Fitting/Seizures,
+                            Irritability, fatigue, difficulty concentrating, low mood (in the days after use)
+
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="box">
+
+
+            @*<div class="box">
+            <div class="body">
+                <div class="imgContainer">
+
+                    <img src="~/IMG/GetHelp/Symptoms/Mouth.png" />
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Mouth</h3>
+                        <p class="fs-6 text-white">
+                            Teeth grinding,
+                            Jaw clenching
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Mouth.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Mouth</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Teeth grinding,
+                            Jaw clenching
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="box">
                 <div class="body">
                     <div class="imgContainer">
 
@@ -153,8 +195,24 @@
                         </div>
                     </div>
                 </div>
+            </div>*@
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="~/IMG/GetHelp/Symptoms/Heart.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Mouth</h1>
+                        <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                            Rapid heart beat
+
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="box">
+
+            @*<div class="box">
                 <div class="body">
                     <div class="imgContainer">
                         <img src="~/IMG/GetHelp/Symptoms/Body.png" />
@@ -174,10 +232,30 @@
                             </p>
                         </div>
                     </div>
+                </div>*@
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="~/IMG/GetHelp/Symptoms/Body.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 class="text-white fs-5" style="margin:20px; margin-top:40px">Body</h1>
+                            <p class="fs-6 text-white" style="text-align: left; margin: 20px">
+                                Muscle aches and pains,
+                                Increased body temperature (hyperthermia),
+                                Heat stroke,
+                                Dehydration,
+                                Drinking excessive amounts of water (can lead to coma and death),
+                                Vomiting
+
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        </div>
+
         <br /><br /><br />
     </section>
 
@@ -245,3 +323,5 @@
 
 
 </html>
+
+
