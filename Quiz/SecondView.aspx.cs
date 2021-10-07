@@ -24,31 +24,31 @@ namespace SoberSpace.Quiz
                 if (int.Parse(Session["score"].ToString()) <= 10)
                 {
 
-                    Response.Redirect("SecondReport.aspx");
+                    Response.Redirect("FeforeSecondReport.aspx");
                 }
 
                 if (int.Parse(Session["score"].ToString()) >= 11 && int.Parse(Session["score"].ToString()) <= 15)
                 {
 
-                    Response.Redirect("SecondReport1.aspx");
+                    Response.Redirect("FeforeSecondReport1.aspx");
                 }
 
                 if (int.Parse(Session["score"].ToString()) >= 16 && int.Parse(Session["score"].ToString()) <= 20)
                 {
 
-                    Response.Redirect("SecondReport2.aspx");
+                    Response.Redirect("FeforeSecondReport2.aspx");
                 }
 
                 if (int.Parse(Session["score"].ToString()) >= 21 && int.Parse(Session["score"].ToString()) <= 25)
                 {
 
-                    Response.Redirect("SecondReport3.aspx");
+                    Response.Redirect("FeforeSecondReport3.aspx");
                 }
 
                 if (int.Parse(Session["score"].ToString()) >= 26)
                 {
 
-                    Response.Redirect("SecondReport4.aspx");
+                    Response.Redirect("FeforeSecondReport4.aspx");
                 }
 
 

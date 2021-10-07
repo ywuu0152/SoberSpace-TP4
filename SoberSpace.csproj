@@ -150,6 +150,34 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz\FeforeSecondReport.aspx.cs">
+      <DependentUpon>FeforeSecondReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport.aspx.designer.cs">
+      <DependentUpon>FeforeSecondReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport2.aspx.cs">
+      <DependentUpon>FeforeSecondReport2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport2.aspx.designer.cs">
+      <DependentUpon>FeforeSecondReport2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport3.aspx.cs">
+      <DependentUpon>FeforeSecondReport3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport3.aspx.designer.cs">
+      <DependentUpon>FeforeSecondReport3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport4.aspx.cs">
+      <DependentUpon>FeforeSecondReport4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport4.aspx.designer.cs">
+      <DependentUpon>FeforeSecondReport4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Quiz\Second.aspx.cs">
       <DependentUpon>Second.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +268,13 @@
     </Compile>
     <Compile Include="Quiz\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport1.aspx.cs">
+      <DependentUpon>FeforeSecondReport1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz\FeforeSecondReport1.aspx.designer.cs">
+      <DependentUpon>FeforeSecondReport1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -411,6 +446,7 @@
     <Content Include="Heroin.html" />
     <Content Include="Homepage Treatment.html" />
     <Content Include="IMG\About us.jpg" />
+    <Content Include="IMG\Fact\pexels-lukas-590022.jpg" />
     <Content Include="IMG\Fact\x1578506710527.jpg.pagespeed.ic.rCIK2hNcKU.jpg" />
     <Content Include="IMG\GetHelp\Explore_cover.jpg" />
     <Content Include="IMG\Fact\Fact1.jpg" />
@@ -425,6 +461,7 @@
     <Content Include="IMG\GetHelp\NA2.jpg" />
     <Content Include="IMG\GetHelp\NA3.jpg" />
     <Content Include="IMG\GetHelp\NA4.jpg" />
+    <Content Include="IMG\GetHelp\pexels-startup-stock-photos-212286.jpg" />
     <Content Include="IMG\Home\Home-cover.jpg" />
     <Content Include="IMG\Home\HH1.jpg" />
     <Content Include="IMG\Home\HH2.jpg" />
@@ -450,7 +487,12 @@
     <Content Include="IMG\Quiz\icons8-file-100.png" />
     <Content Include="IMG\Quiz\icons8-打印-100.png" />
     <Content Include="IMG\Quiz\print.png" />
+    <Content Include="IMG\Quiz\Service.jpg" />
+    <Content Include="IMG\Quiz\Explore.jpg" />
+    <Content Include="IMG\Quiz\Rehab.jpg" />
     <Content Include="IMG\Quiz\sub.png" />
+    <Content Include="IMG\Quiz\Relax.jpg" />
+    <Content Include="IMG\Relax\pexels-s-migaj-747964.jpg" />
     <Content Include="IMG\Relax\Relax.jpg" />
     <Content Include="IMG\report\Rehab.jpg" />
     <Content Include="IMG\report\rehab2.jpg" />
@@ -475,6 +517,7 @@
     <Content Include="IMG\Services\250.jpg" />
     <Content Include="IMG\300.jpg" />
     <Content Include="IMG\Rehab\rehab.jpg" />
+    <Content Include="IMG\Services\family.jpg" />
     <Content Include="IMG\Services\Final_logo.png" />
     <Content Include="IMG\GetHelp\Cannabis\C2.jpeg" />
     <Content Include="IMG\GetHelp\Cannabis\C3.jpeg" />
@@ -501,6 +544,14 @@
     <Content Include="IMG\mapbox-icon.png" />
     <Content Include="IMG\Rehab\pin.png" />
     <Content Include="IMG\Rehab\icons8-location-24.png" />
+    <Content Include="IMG\Services\friend.jpg" />
+    <Content Include="IMG\Services\pexels-andres-ayrton-6551415.jpg" />
+    <Content Include="IMG\Services\Second1.jpg" />
+    <Content Include="IMG\Services\Second2.jpg" />
+    <Content Include="IMG\Services\Second3.jpg" />
+    <Content Include="IMG\Services\Second4.jpg" />
+    <Content Include="IMG\Services\Second5.jpg" />
+    <Content Include="IMG\Services\Second6.jpg" />
     <Content Include="IMG\Services\Services Banner.jpg" />
     <Content Include="IMG\Services\Services_cover.jpg" />
     <Content Include="IMG\Services\Resources_main.jpeg" />
@@ -528,6 +579,10 @@
     <Content Include="js\echarts.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\swiper.js" />
+    <Content Include="Quiz\FeforeSecondReport.aspx" />
+    <Content Include="Quiz\FeforeSecondReport2.aspx" />
+    <Content Include="Quiz\FeforeSecondReport3.aspx" />
+    <Content Include="Quiz\FeforeSecondReport4.aspx" />
     <Content Include="Quiz\Second.aspx" />
     <Content Include="Quiz\Second1.aspx" />
     <Content Include="Quiz\Second2.aspx" />
@@ -541,6 +596,7 @@
     <Content Include="Quiz\SecondReport4.aspx" />
     <Content Include="Quiz\SecondView.aspx" />
     <Content Include="Quiz\WebForm1.aspx" />
+    <Content Include="Quiz\FeforeSecondReport1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -666,6 +722,12 @@
     <Content Include="Views\Facts\Resource.cshtml" />
     <Content Include="Views\Facts\Resource2.cshtml" />
     <Content Include="Views\Relax\Relax.cshtml" />
+    <Content Include="Views\Services\SecondIndex.cshtml" />
+    <Content Include="Views\Services\SecondIndex2.cshtml" />
+    <Content Include="Views\Services\SecondIndex3.cshtml" />
+    <Content Include="Views\Services\SecondIndex4.cshtml" />
+    <Content Include="Views\Services\SecondIndex5.cshtml" />
+    <Content Include="Views\Services\SecondIndex6.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

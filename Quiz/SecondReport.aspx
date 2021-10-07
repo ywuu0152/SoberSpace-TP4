@@ -45,9 +45,10 @@
 <body>
 
     <!-- ======= Header Section======= -->
-    <header id="header" class="fixed-top" style="background-color:black">
+           <header id="header" class="fixed-top" style="background-color:black">
         <div class="container d-flex">
-            <img class="img-fluid" src="../IMG/Final_logo.png" style="width: 50px; height:50px; padding-right: 15px;"/>
+
+            <a href="/Home/Index"><img class="img-fluid" src="/IMG/Final_logo.png" style="width: 50px; height:50px; padding-right: 15px;"></a>
             <div class="logo mr-auto">
                 <h1 class="text-light" style="font-size: 20px; font-family: Major Mono Display; "><a href="/Home/Index">Sober Space</a></h1>
             </div>
@@ -55,20 +56,12 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="/Home/Index">Home</a></li>
-
-                    <li class="drop-down">
-                        <a href="/Facts/Resource">Facts</a>
-                        <ul>
-                            <li><a href="/Facts/Resource">States</a></li>
-                            <li><a href="/Facts/Resource2">Reasons</a></li>
-                        </ul>
-                    </li>
-
                     <li><a href="/GetHelp/GetHelp">Explore</a></li>
+                    <li><a href="/Facts/Resource">Fact</a></li>
                     <li><a href="/Rehab/Location">Rehab</a></li>
                     <li><a href="/Services/Index">Services</a></li>
-                    <li><a href="/Quiz/Second.aspx">Quiz</a></li>
-
+                    <li><a href="~/Quiz/Second.aspx">Quiz</a></li>
+                    <li><a href="/Relax/Relax">Relax</a></li>
                 </ul>
             </nav>
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Second.aspx.cs" Inherits="SoberSpace.Quiz.Second" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FeforeSecondReport1.aspx.cs" Inherits="SoberSpace.Quiz.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -70,53 +70,125 @@
     </header>
 
     <!-- End of Header Section-->
+
+
         <div style="text-align: center">
-        <img class="img-fluid" src="../IMG/Quiz/5.jpg" >
+        <img class="img-fluid" src="../IMG/Quiz/5.jpg" />
     </div>
 
-    <form id="form1" runat="server">
-        <div id="main">
-            <div class="index-sec1">
-                <div class="title">
-                    <h3><span>Question Detail </span></h3>
-                </div>
-                <div class="wp">
-                    <ul class="clearfix">
-                        <li style="width: 100%">
-                            <div class="item-box">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 17%">17%</div>
-                                </div>
-                            </div>
-                            <div class="item-box">
-                                <div class="inner-wp" style="width: 99%">
-                                    <p>1. How are you feeling right now?</p>
-                                    <p style="width: 99%">
-                                       <table  style="width: 99%">
-                                           <tr>
-                                           <td style= "Text-Align:left; ">
-                                        &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="1" RepeatDirection="Horizontal">
-                                               <asp:ListItem Text="A little of the time" Value="1">&nbsp; Unsure</asp:ListItem>
-                                               <asp:ListItem Text="Some of the time" Value="2">&nbsp; Pretty good</asp:ListItem>
-                                               <asp:ListItem Text="Good part of the time" Value="3">&nbsp; Tired</asp:ListItem>
-                                               <asp:ListItem Text="Most of the time" Value="4">&nbsp; Pretty flat</asp:ListItem>
-                                               <asp:ListItem Text="Most of the time" Value="5">&nbsp; Stressed and anxious</asp:ListItem>
-                                           </asp:RadioButtonList>
-                                               </td></tr>
-                                           </table>
-                                    </p>
-                                </div>
-                                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="../IMG/Quiz/icons8-right-100.png" Height="100px"  OnClick="ImageButton2_Click" BorderStyle="None" />
-                              
-                            </div>
- 
+    <div style="width:60%; margin:auto">
+        <div class="card mb-3 border-0 shadow-none">
+<%--            <img src="~/IMG/Fact/x1578506710527.jpg.pagespeed.ic.rCIK2hNcKU.jpg" style="height:600px;" class="card-img-top" alt="..." />--%>
+            <div class="card-body">
+                <span class="card-text">
+                    From:
+                </span>
+                <span class="card-text" style="font-weight:bold">
+                    Carpe Diem
+                </span>
+                <p></p>
+                <p>
+                    <span class="card-text">
+                    To: My friend
+                    </span>
+                </p>
+                <p>
 
-                    </ul>
-                </div>
+                </p>
+                <span class="card-text">
+                    Subject:
+                </span>                    
+                <span class="card-text" style="font-weight:bold">
+                    Keep doing what works for you!
+                </span>
+                <p></p>
+                <p >Dear friend,</p>
+                <p class="card-text" >
+                    it seems that your condition is excellent at the moment! You have a positive attitude, stable emotions, and good decompression ability. These are all essential factors on your way to success.
+                    We hope you can continue to face life with such an optimistic attitude.
+                    At the same time, you can also choose to have a conversation with friends & family members for 15-30 minutes a day to build social connection with others, and at the same time to relieve some buried emotions that are still in the bud.
+                    Secondly, you can also develop a new hobby and face life with a more positive attitude.
+                   
+                </p>
+                <p></p>               
+                <br />
+                <h4 class="card-text">
+                    Do you want to review the question you selected and print it out? Then click <a href="/Quiz/SecondReport1.aspx">here</a>!
+
+                </h4>
+
+                <p></p>
+<%--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>--%>
             </div>
-
         </div>
-    </form>
+    </div>
+
+    <div style="width:60%; margin:auto">
+        <div class="card mb-3 border-0 shadow-none">
+<%--            <img src="~/IMG/Fact/x1578506710527.jpg.pagespeed.ic.rCIK2hNcKU.jpg" style="height:600px;" class="card-img-top" alt="..." />--%>
+            <div class="card-body">
+                <h1 class="card-title text-center">Maybe you should:</h1>
+            </div>
+        </div>
+    </div>
+
+           <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <p class="lead" style="text-align:justify;">
+                    Do you need professional advice? Check out for the experts nearby.Click <a href="/Rehab/Location">here</a>.
+                </p>
+
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 ">
+                <img src="../IMG/Quiz/Rehab.jpg"  alt="" class="img-fluid" style="margin-bottom:20px" />
+
+            </div>
+        </div>
+    </div>
+
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
+            <div class="col-lg-4 offset-lg-1 p-0 ">
+                            <img src="../IMG/Quiz/Service.jpg"  alt="" class="img-fluid" style="margin-bottom:20px;" />
+                       </div>
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <p class="lead" style="text-align:justify;">
+                    Don't know how to communicate with friends? Click <a href="/Services/Index">here</a>.
+                </p>
+            </div>           
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <p class="lead" style="text-align:justify;">
+                    Never take Illicit drugs as an escape door for pressure, learn some more knowledge about drug impact in body. Click <a href="/GetHelp/GetHelp">here</a>.
+                </p>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 ">
+                <img src="../IMG/Quiz/Explore.jpg"  alt="" class="img-fluid" style="margin-bottom:20px" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
+            <div class="col-lg-4 offset-lg-1 p-0 ">
+                            <img src="../IMG/Quiz/Relax.jpg" alt="" class="img-fluid" style="margin-bottom:20px;" />
+                       </div>
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <p class="lead" style="text-align:justify;">
+                    Do you want to listen to a song to relax? Click <a href="/Relax/Relax">here</a>.
+                </p>
+            </div>           
+        </div>
+    </div>
 
      <hr />
 
@@ -211,3 +283,10 @@
     });
 </script>
 </html>
+<<style>
+     body {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+
+}
+ </style>
