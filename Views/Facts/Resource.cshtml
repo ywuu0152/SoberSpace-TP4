@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Resource";
+    ViewBag.Title = "Fact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -178,18 +178,14 @@
 
                         </h4>*@
                 <p></p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
             </div>
         </div>
     </div>
 
     <br />
-    <br />
-    <br />
-    <br />
 
-
-    <div class="r border-info shadow-none">
+    <div class="r border-0 shadow-none">
         <div style="text-align:center">
             <iframe height="800" width="70%" frameborder="no" src="https://ckuo0004.shinyapps.io/Shiny_Fact_1/"> </iframe>
         </div>
@@ -232,17 +228,24 @@
                     provided methadone treatment or outpatient treatment.
 
                     What if we sought more professional help?
-                    Visit the <a href="/Rehab/Location">Rehab page</a>  to find more information.
-
                 </p>
+                <br />
+                <div class="text-center">
+                    <h4>Visit the Rehab page to find more information.</h4>
+                    <div>
+                        <button class="btn btn-dark"><a href="/Rehab/Location">Click here</a></button>
+                    </div>
+                </div>
+
+
                 <br />
             </div>
         </div>
     </div>
 
-    <div class="r border-info shadow-none">
-        <div style="text-align:center">
-            <iframe height="500" width="100%" src="~/echart 2.html"> </iframe>
+    <div class="r border-0 shadow-none">
+        <div class="border-0" style="text-align:center">
+            <iframe height="500" width="100%" src="~/Adition Treatment Method Pie Bar.html"> </iframe>
         </div>
     </div>
 
@@ -255,12 +258,17 @@
             <div class="card-body">
                 <h1 class="card-title">WHAT TO DO NEXT</h1>
                 <p class="card-text">
+                    Through our Explore page, you can get more relevant information and learn more about the harm of various drugs to physical and mental health. 
+                </p>
+                <p><button class="btn btn-dark"><a href="/GetHelp/GetHelp">Explore</a></button></p>
+                @*<p><a href="/GetHelp/GetHelp"> <u>Explore&raquo;</u></a> </p>*@
+                <p class="card-text">
                     The mental and pressure is based on the influence from our daily lives. We may feel struggle and frustration during work or study.
-
                 </p>
                 <p></p>
                 <p class="card-text">
-                    Use our <a href="~/Quiz/Second.aspx">quiz page</a> tool to explore and learn more about what we should be more aware of!
+                    Use our Quiz page</a> tool to explore and learn more about what we should be more aware of!
+                <p><button class="btn btn-dark"><a href="~/Quiz/Second.aspx">Quiz</a></button></p>
                 </p>
             </div>
         </div>

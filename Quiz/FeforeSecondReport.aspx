@@ -76,9 +76,13 @@
         <img class="img-fluid" src="../IMG/Quiz/5.jpg" />
     </div>
 
-    <div style="width:60%; margin:auto">
-        <div class="card mb-3 border-0 shadow-none">
-<%--            <img src="~/IMG/Fact/x1578506710527.jpg.pagespeed.ic.rCIK2hNcKU.jpg" style="height:600px;" class="card-img-top" alt="..." />--%>
+    <div style="width:60%; margin:auto;">
+        <br />
+        <div class="text-center" style="background-color:white;">
+            <iframe height="1250" width="100%" frameborder="no" src="../Mail.html"> </iframe>
+        </div>
+
+        <%--<div class="card mb-3 border-0 shadow-none" >
             <div class="card-body">
                 <span class="card-text">
                     From:
@@ -122,11 +126,15 @@
                     2. You can also go for some exercise every day for an hour and breathe fresh air in the park.
 
                 </p>
-                <br />
-                <h4 class="card-text">
-                    Do you want to review the question you selected and print it out? Then click <a href="/Quiz/SecondReport.aspx">here</a>!
-
+                <br />--%>
+                <h4 class="card-text text-center">
+                    Do you want to review the question you selected and print it out? 
                 </h4>
+                <p></p>
+                <div class="text-center">
+                    <a class="btn btn-primary text-center" type="button" style=" background: #212529; border-color: rgba(255,255,255,0)" href="/Quiz/SecondReport.aspx">Review and print</a>
+                </div>
+
 
                 <p></p>
 <%--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>--%>
@@ -148,8 +156,11 @@
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 <%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
                 <p class="lead" style="text-align:justify;">
-                    Do you need professional advice? Check out for the experts nearby.Click <a href="/Rehab/Location">here</a>.
+                    Do you need professional advice? Check out for the experts nearby.
                 </p>
+                <div>
+                    <button class="btn btn-dark"><a href="/Rehab/Location">Click here</a></button>
+                </div>
 
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 ">
@@ -167,8 +178,11 @@
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 <%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
                 <p class="lead" style="text-align:justify;">
-                    Don't know how to communicate with friends? Click <a href="/Services/Index">here</a>.
+                    Don't know how to communicate with friends?
                 </p>
+                <div>
+                    <button class="btn btn-dark"><a href="/Services/Index">Click here</a></button>
+                </div>
             </div>           
         </div>
     </div>
@@ -178,8 +192,11 @@
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 <%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
                 <p class="lead" style="text-align:justify;">
-                    Never take Illicit drugs as an escape door for pressure, learn some more knowledge about drug impact in body. Click <a href="/GetHelp/GetHelp">here</a>.
+                    Never take Illicit drugs as an escape door for pressure, learn some more knowledge about drug impact in body.
                 </p>
+                <div>
+                    <button class="btn btn-dark"><a href="/GetHelp/GetHelp">Click here</a></button>
+                </div>
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 ">
                 <img src="../IMG/Quiz/Explore.jpg"  alt="" class="img-fluid" style="margin-bottom:20px" />
@@ -195,15 +212,18 @@
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 <%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
                 <p class="lead" style="text-align:justify;">
-                    Do you want to listen to a song to relax? Click <a href="/Relax/Relax">here</a>.
+                    Do you want to listen to a song to relax?
                 </p>
+                <div>
+                    <button class="btn btn-dark"><a href="/Relax/Relax">Click here</a></button>
+                </div>
             </div>           
         </div>
     </div>
 
      <hr />
 
-    <!-- ======= Footer Section ======= -->
+   <!-- ======= Footer Section ======= -->
     <footer id="footer">
         <div class="footer-top" style="background-color:black">
             <div class="container">
@@ -218,21 +238,29 @@
                             <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="/GetHelp/GetHelp">Explore</a></li>
                             <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="/Services/Index">Services</a></li>
                             <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="/Rehab/Location">Rehab</a></li>
-                            
+
+
+
 
 
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="Second.aspx">Quiz</a></li>
+                            <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="/Facts/Resource">Facts</a></li>
+                            <li><i class="bx bx-chevron-right" style="color:#e2a349;"></i> <a href="/Relax/Relax">Relax</a></li>
 
 
+                        </ul>
                     </div>
 
 
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h3 style="font-family: Major Mono Display; color: #e2a349;">SOBER SPACE</h3>
-                        <p style=" text-align:justify;">
+                        <h3 style="font-family: Major Mono Display; color: #e2a349; font-size: 18px;">SOBER SPACE</h3>
+                        <p style=" text-align:justify; font-size: 14px;">
 
                             Sober Space offers interactive, complete information, and resources. Within we share the content from public service and offer different aspects of supporting suggestions, and locations of professional centres.
                         </p>
@@ -242,7 +270,7 @@
 
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="../IMG/Final_logo.png" style="width: 144px; height:144px; padding-right: 15px;">
+                        <img class="img-fluid" src="../IMG/Final_logo.png" style="width: 140px; height:100px; padding-right: 15px;">
                     </div>
                 </div>
             </div>
@@ -252,6 +280,7 @@
 
 
     </footer>
+    <!-- End of Footer Section-->
 
 </body>
 

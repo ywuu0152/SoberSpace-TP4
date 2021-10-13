@@ -45,9 +45,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HttpAuthModule, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\HttpAuthModule.2.2.2.0\lib\net45\HttpAuthModule.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Build.Framework.16.0.461\lib\net472\Microsoft.Build.Framework.dll</HintPath>
       <Private>True</Private>
@@ -262,13 +259,6 @@
     <Compile Include="Quiz\SecondView.aspx.designer.cs">
       <DependentUpon>SecondView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Quiz\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Quiz\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Quiz\FeforeSecondReport1.aspx.cs">
       <DependentUpon>FeforeSecondReport1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,6 +268,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adition Treatment Method Pie Bar.html" />
     <Content Include="Cannabis.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -339,6 +330,7 @@
     <Content Include="Content\BootstrapFiles\HomePage\assets\vendor\venobox\venobox.min.js" />
     <Content Include="Content\BootstrapFiles\HomePage\Falling_Arrow.css" />
     <Content Include="Content\BootstrapFiles\Rehab\Map.css" />
+    <Content Include="Content\BootstrapFiles\Relex\Relax.css" />
     <Content Include="Content\BootstrapFiles\Services\Services-index.css" />
     <Content Include="Content\carousel.css" />
     <Content Include="Content\carousel.rtl.css" />
@@ -464,13 +456,13 @@
     <Content Include="IMG\GetHelp\pexels-startup-stock-photos-212286.jpg" />
     <Content Include="IMG\Home\Home-cover.jpg" />
     <Content Include="IMG\Home\HH1.jpg" />
-    <Content Include="IMG\Home\HH2.jpg" />
     <Content Include="IMG\Home\HH3.jpg" />
     <Content Include="IMG\Home\HH4.jpg" />
     <Content Include="IMG\Home\Home-1.jpg" />
     <Content Include="IMG\Home\icons8-computer-50.png" />
     <Content Include="IMG\Home\icons8-magnifying-glass-50.png" />
     <Content Include="IMG\Home\icons8-musical-notes-50.png" />
+    <Content Include="IMG\Home\InkedHH2_LI.jpg" />
     <Content Include="IMG\Home\WIA.jpeg" />
     <Content Include="IMG\New-3.png" />
     <Content Include="IMG\Final_logo.png" />
@@ -486,6 +478,7 @@
     <Content Include="IMG\Quiz\icons8-双右.gif" />
     <Content Include="IMG\Quiz\icons8-file-100.png" />
     <Content Include="IMG\Quiz\icons8-打印-100.png" />
+    <Content Include="IMG\Quiz\mail.jpg" />
     <Content Include="IMG\Quiz\print.png" />
     <Content Include="IMG\Quiz\Service.jpg" />
     <Content Include="IMG\Quiz\Explore.jpg" />
@@ -513,10 +506,14 @@
     <Content Include="IMG\Services\7.jpg" />
     <Content Include="IMG\Services\8.jpg" />
     <Content Include="IMG\Services\9.jpg" />
+    <Content Include="IMG\Services\Bong.png" />
+    <Content Include="IMG\Services\Bruise.jpg" />
+    <Content Include="IMG\Services\CG_paper_test.png" />
     <Content Include="IMG\Services\Cover.png" />
     <Content Include="IMG\Services\250.jpg" />
     <Content Include="IMG\300.jpg" />
     <Content Include="IMG\Rehab\rehab.jpg" />
+    <Content Include="IMG\Services\Eat_Pic.png" />
     <Content Include="IMG\Services\family.jpg" />
     <Content Include="IMG\Services\Final_logo.png" />
     <Content Include="IMG\GetHelp\Cannabis\C2.jpeg" />
@@ -545,6 +542,8 @@
     <Content Include="IMG\Rehab\pin.png" />
     <Content Include="IMG\Rehab\icons8-location-24.png" />
     <Content Include="IMG\Services\friend.jpg" />
+    <Content Include="IMG\Services\lighter.jpg" />
+    <Content Include="IMG\Services\Moody.png" />
     <Content Include="IMG\Services\pexels-andres-ayrton-6551415.jpg" />
     <Content Include="IMG\Services\Second1.jpg" />
     <Content Include="IMG\Services\Second2.jpg" />
@@ -574,6 +573,11 @@
     <Content Include="IMG\Services\S9.jpg" />
     <Content Include="IMG\Home\signs of drug addiction.jpg" />
     <Content Include="IMG\Slider-try.png" />
+    <Content Include="Mail4.html" />
+    <Content Include="Mail3.html" />
+    <Content Include="Mail2.html" />
+    <Content Include="Mail1.html" />
+    <Content Include="Mail.html" />
     <Content Include="js\bt.js" />
     <Content Include="js\common.js" />
     <Content Include="js\echarts.min.js" />
@@ -595,7 +599,6 @@
     <Content Include="Quiz\SecondReport3.aspx" />
     <Content Include="Quiz\SecondReport4.aspx" />
     <Content Include="Quiz\SecondView.aspx" />
-    <Content Include="Quiz\WebForm1.aspx" />
     <Content Include="Quiz\FeforeSecondReport1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

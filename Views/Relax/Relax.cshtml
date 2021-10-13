@@ -1,8 +1,10 @@
 ﻿
 @{
-	ViewBag.Title = "Relax";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Relax";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@*<body background="~/IMG/Relax/pexels-s-migaj-747964.jpg" style="background-size: cover; background-attachment: fixed ">*@
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,59 +17,185 @@
     <link rel="stylesheet"
           href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
     <link href="~/Content/css/Relax.css" rel="stylesheet" />
-    <title>Mini Player</title>
+    @*<link href="~/Content/css/Header.css" rel="stylesheet" />*@
 
+    <style>
+        .body, html {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body background="~/IMG/Relax/pexels-s-migaj-747964.jpg" style="background-size: cover; background-attachment: fixed ">
 
-    <div class="c-containter">
 
-        <div class="music-container">
-            <section class="album-cover">
+    @*======= Header Section =======*@
+    @*<div style="text-align:center;">
+            <img class="img-fluid" src="~/IMG/Relax/Relax.jpg" style="margin-right: 7px;  ">
 
-                <button class="arrow left" id="prev">
-                    <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_left.svg" alt="Next Music">
-                </button>
-                <img src="http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg" class="cover" alt="From One To Nine by Marcel Pequel">
+        </div>*@
 
-                <button class="arrow right" id="next">
-                    <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_right.svg" alt="Next Music">
-                </button>
-            </section>
-            <section class="music-player">
-                <h1 class="music-player__title"></h1>
-                <h2 class="music-player__author"></h2>
-                <div class="music-time">
-                    <p class="music-time__current"></p>
-                    <p class="music-time__last"></p>
-                </div>
-                <div class="music-bar" id="progress">
-                    <div id="length"></div>
-                </div>
-                <div class="music-order">
-                    <div class="music-order__loop is-loop" id="loop">
-                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/loop.svg" alt="Loop music">
-                    </div>
-                    <div class="music-order__shuffle" id="shuffle">
-                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/shuffle.svg" alt="Shuffle music">
-                    </div>
-                </div>
-                <div class="music-control">
-                    <div class="music-control__backward" id="backward">
-                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/backward.svg" alt="Backward">
-                    </div>
-                    <div class="music-control__play" id="play">
-                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/play.svg" alt="Play" class="play">
-                    </div>
-                    <div class="music-control__forward" id="forward">
-                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/forward.svg" alt="Forward">
-                    </div>
-                </div>
-            </section>
+
+
+
+    <!-- ======= Hero Section ======= -->
+    <!--<section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="margin-top:0px">
+        <div class="content">
+            <div class="left-col">
+                <h1 style="color:black;">
+                    RELAX! <br /><br />
+                    ENJOY THE MUSIC! <br /><br />
+                    LISTEN TO THE PODCAST!
+                </h1>
+            </div>
+            <div class="right-col">
+                <p>Click here to listen</p>
+
+                <img src="~/IMG/Relax/icons8-play-button-circled-50.png" id="icon">
+            </div>
+
         </div>
-        <p></p>
-        @*<p class="disclaimer">Music by Marcel Pequel and audio from <a href="http://freemusicarchive.org/music/Marcel_Pequel/From_One_To_Nine/" target="_blank" rel="noopener">Free Music Archive</a>. Design idea from <a href="https://dribbble.com/shots/2315906-Music-player-PSD-freebie-dailyui-Day-009" target="_blank" rel="noopener">Dima Blover</a></p>*@
+
+        <audio id="mySong">
+
+
+                <source src="~/mp3/bensound-relaxing.mp3" type="audio/mp3" />
+
+
+
+        </audio>
+
+        <script>
+
+            var mySong = document.getElemntById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+
+                if (mySong.paused) {
+                    mySong.play();
+                    icon.src = "~/IMG/Relax/icons8-pause-button-50.png";
+
+                } else {
+                    mySong.pause();
+                    icon.src = "~/IMG/Relax/icons8-play-button-circled-50.png";
+
+
+                }
+            }
+        </script>
+
+
+
+
+    </section>-->
+    <!-- End of Hero -->
+    <!-- End of Header -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="text-center" style="font-size: 32px;"><strong>Listen To Music!! Relax Yourself!!</strong></h2>
+
+    <section style="margin-top: -140px;">
+
+        <div class="c-containter">
+            <div class="music-container">
+                <section class="album-cover">
+
+                    <button class="arrow left" id="prev">
+                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_left.svg" alt="Next Music">
+                    </button>
+                    <img src="http://res.cloudinary.com/dkzj4hdmd/image/upload/v1536400483/cover_yz2mak.jpg" class="cover" alt="From One To Nine by Marcel Pequel">
+
+                    <button class="arrow right" id="next">
+                        <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_right.svg" alt="Next Music">
+                    </button>
+                </section>
+                <section class="music-player">
+                    <h1 class="music-player__title"></h1>
+                    <h2 class="music-player__author"></h2>
+                    <div class="music-time">
+                        <p class="music-time__current"></p>
+                        <p class="music-time__last"></p>
+                    </div>
+                    <div class="music-bar" id="progress">
+                        <div id="length"></div>
+                    </div>
+                    <div class="music-order">
+                        <div class="music-order__loop is-loop" id="loop">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/loop.svg" alt="Loop music">
+                        </div>
+                        <div class="music-order__shuffle" id="shuffle">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/shuffle.svg" alt="Shuffle music">
+                        </div>
+                    </div>
+                    <div class="music-control">
+                        <div class="music-control__backward" id="backward">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/backward.svg" alt="Backward">
+                        </div>
+                        <div class="music-control__play" id="play">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/play.svg" alt="Play" class="play">
+                        </div>
+                        <div class="music-control__forward" id="forward">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/forward.svg" alt="Forward">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <p></p>
+            @*<p class="disclaimer">Music by Marcel Pequel and audio from <a href="http://freemusicarchive.org/music/Marcel_Pequel/From_One_To_Nine/" target="_blank" rel="noopener">Free Music Archive</a>. Design idea from <a href="https://dribbble.com/shots/2315906-Music-player-PSD-freebie-dailyui-Day-009" target="_blank" rel="noopener">Dima Blover</a></p>*@
+        </div>
+
+        <!-- Videos Section -->
+        @*<div class="section-title">
+                <h2 style="font-weight:bold; text-align : center;">Here few relavent podcast which you can listen too!</h2>
+            </div>*@
+    </section>
+
+    <div class="intro" style="margin-top: -140px;">
+        <h2 class="text-center" style="font-size: 32px; color:aliceblue"><strong>These are few relevant podcasts that can help you relax </strong></h2>
     </div>
+
+    <section class="clean-block about-us" style="margin-top: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4" style="border-style: none;">
+                    <div class="card clean-card text-center">
+                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/p3JLaF_4Tz8" style="height: 350px;"></iframe>
+
+
+                        <div class="card-body info">
+                            <h4 class="card-title">Addiction and Treatment</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" style="border-style: none;">
+                    <div class="card clean-card text-center">
+                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/5qap5aO4i9A" style="height: 350px;"></iframe>
+                        <div class="card-body info">
+                            <h4 class="card-title">Relax Music from LOFI hiphop</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" style="border-style: none;">
+                    <div class="card clean-card text-center">
+                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/-82_C-aNWF8" style="height: 350px;"></iframe>
+                        <div class="card-body info">
+                            <h4 class="card-title">About the Anxiety and finding the root</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End of Videos Section -->
+
 
     <script>
         (function IIFE() {
