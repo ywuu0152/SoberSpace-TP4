@@ -154,7 +154,7 @@
            <div class="container my-5">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">Rehab</h1><p></p>
                 <p class="lead" style="text-align:justify;">
                     Do you need professional advice? Check out for the experts nearby.
                 </p>
@@ -165,7 +165,6 @@
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 ">
                 <img src="../IMG/Quiz/Rehab.jpg"  alt="" class="img-fluid" style="margin-bottom:20px" />
-
             </div>
         </div>
     </div>
@@ -176,7 +175,7 @@
                             <img src="../IMG/Quiz/Service.jpg"  alt="" class="img-fluid" style="margin-bottom:20px;" />
                        </div>
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">Services</h1><p></p>
                 <p class="lead" style="text-align:justify;">
                     Don't know how to communicate with friends?
                 </p>
@@ -190,7 +189,7 @@
     <div class="container my-5">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">Explore</h1><p></p>
                 <p class="lead" style="text-align:justify;">
                     Never take Illicit drugs as an escape door for pressure, learn some more knowledge about drug impact in body.
                 </p>
@@ -210,7 +209,8 @@
                             <img src="../IMG/Quiz/Relax.jpg" alt="" class="img-fluid" style="margin-bottom:20px;" />
                        </div>
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-<%--                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">May be you should</h1>--%>
+                <h1 class="display-4 fw-bold lh-1 " style="font-size: 38px;">Relax</h1>
+                <p></p>
                 <p class="lead" style="text-align:justify;">
                     Do you want to listen to a song to relax?
                 </p>

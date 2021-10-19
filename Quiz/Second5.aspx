@@ -9,9 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/swiper.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-        <title>@ViewBag.Title - Sober Space </title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title> Sober Space </title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <meta content="" name="description">

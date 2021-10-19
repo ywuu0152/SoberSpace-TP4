@@ -1,8 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Second1.aspx.cs" Inherits="SoberSpace.Quiz.Second1" %>
 
 <!DOCTYPE html>
-
-<!DOCTYPE html>
  <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,9 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/swiper.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-        <title>@ViewBag.Title - Sober Space </title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title> Sober Space </title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     <meta content="" name="description">

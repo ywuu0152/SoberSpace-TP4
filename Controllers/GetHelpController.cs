@@ -29,5 +29,15 @@ namespace SoberSpace.Controllers
         {
             return View();
         }
+
+        public ActionResult Meth()
+        {
+            return View();
+        }
+
+        public ActionResult Cocaine()
+        {
+            return View();
+        }
     }
 }
